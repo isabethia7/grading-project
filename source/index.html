@@ -3,9 +3,17 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Drink2Go</title>
+
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Drink2Go</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="preload" href="./fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/opensans.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/opensansbold.woff" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -80,6 +88,9 @@
           <div class="promo_coffee_variants__container container">
             <h2 class="promo_coffee_variants__title title">Отзывы</h2>
             <div class="promo_coffee_variants__image">
+              <button class="items__control-arrow items__control-arrow--prev" type="button" aria-label="Листать назад.">
+                <span class="arrow-prev">Назад</span>
+              </button>
               <picture>
                 <source media="(min-width: 1150px)" srcset="./img/header-coffee-desktop.webp 1x, ./img/header-coffee-desktop@2x.webp 2x" type="image/webp">
                 <source media="(min-width: 1150px)" srcset="./img/header-coffee-desktop.jpg 1x, ./img/header-coffee-desktop@2x.jpg 2x">
@@ -89,7 +100,11 @@
 
                 <source srcset="./img/header-coffee-mobile.webp 1x, ./img/header-coffee-mobile.webp 2x" type="image/webp">
                 <img src="./img/header-coffee-mobile.jpg" srcset="./img/header-coffee-mobile@2x.jpg" alt="Декаф Флэт Уайт.">
+
               </picture>
+              <button class="items__control-arrow items__control-arrow--next" type="button" aria-label="Листать дальше.">
+                <span class="arrow-next">Вперед</span>
+              </button>
             </div>
             <!--
             <div class="promo_coffee_variants__control">
@@ -116,10 +131,23 @@
         <p>Преимущества</p>
         <h2 class="benefits__title title">Главные причины выбрать Drink2Go</h2>
         <ul class="benefits__list list-reset">
-          <li class="benefits__item about__item--speed">Готовый напиток всегда под рукой — просто открой банку</li>
-          <li class="benefits__item about__item--fit">Легко помещается и в карман, и в маленькую сумочку</li>
-          <li class="benefits__item about__item--energy">Сбалансированная доза кофеина даст мощный заряд энергии</li>
-          <li class="benefits__item about__item--eco">Вся упаковка сделана из перерабатываемых материалов</li>
+          <li class="benefits__item about__item--speed">
+            <h2>Скорость</h2>
+            Готовый напиток всегда под рукой — просто открой банку
+          </li>
+          <li class="benefits__item about__item--fit">
+            <svg></svg>
+            <h2>Удобство</h2>
+            Легко помещается и в карман, и в маленькую сумочку
+          </li>
+          <li class="benefits__item about__item--energy">
+            <h2>Бодрость</h2>
+            Сбалансированная доза кофеина даст мощный заряд энергии
+          </li>
+          <li class="benefits__item about__item--eco">
+            <h2>Экологичность</h2>
+            Вся упаковка сделана из перерабатываемых материалов
+          </li>
         </ul>
       </div>
     </section>
@@ -323,7 +351,7 @@
                   <a class="catalog__cart modal-open" href="#" aria-label="Добавить в корзину.">
                     <span class="visually-hidden">В корзину</span>
                     <svg width="21" height="19" role="img">
-                      <use xlink:href="img/sprite.svg#icon-add-to-cart"></use>
+                      <use xlink:href="./img/sprite.svg#icon-add-to-cart"></use>
                     </svg>
                   </a>
                 </div>
@@ -444,9 +472,8 @@
         <li class="social__item">
           <a class="social__link" href="https://vk.com/htmlacademy">
             <svg width="28" height="22" role="img" aria-label="Мы в контакте.">
-              <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
+              <use xlink:href="./img/sprite.svg#social-vk"></use>
             </svg>
-
             <span class="visually-hidden">ВКонтакте.</span>
           </a>
         </li>
