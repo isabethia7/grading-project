@@ -1,0 +1,37 @@
+.promo {
+  position: relative;
+  text-align: center;
+  margin-bottom: 50px;
+  background-color: #F3EBE1;
+  padding: 30px 12px 30px 12px;
+}
+
+.promo__container{
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.promo__item-img--lavender {
+  display: none;
+}
+
+.promo__item-img--espresso {
+  display: none;
+}
+
+.promo__control-arrow {
+  margin: 0 auto;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.promo__price-container {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  justify-content: space-between;
+}
