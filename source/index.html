@@ -36,7 +36,7 @@
             <img src="./img/svg/shop-logo-mobile.svg" alt="Логотип Drink2Go.">
           </picture>
         </a>
-        <p>Интернет-магазин кофейных напитков</p>
+        <p class="visually-hidden">Интернет-магазин кофейных напитков</p>
       </div>
 
       <ul class="nav__list nav__list--main list-reset">
@@ -77,15 +77,9 @@
 
     <section class="promo">
       <div class="promo__container container">
-        <section class="promo_coffee_variants">
-          <div class="promo_coffee_variants__container container">
-            <div class="promo_coffee_variants__image">
-              <button class="items__control-arrow items__control-arrow--prev" type="button" aria-label="Листать назад.">
-                <span class="arrow-prev">Назад</span>
-              </button>
-              <div>
-
-                <picture>
+            <ol class="promo__list list-reset">
+              <li class=" promo__item promo__item-img promo__item-img--active">
+                <picture class=" promo__item-img" >
                   <source media="(min-width: 1150px)" srcset="./img/header-coffee-desktop-cream.webp 1x, ./img/header-coffee-desktop-cream@2x.webp 2x" type="image/webp">
                   <source media="(min-width: 1150px)" srcset="./img/header-coffee-desktop-cream.jpg 1x, ./img/header-coffee-desktop-cream@2x.jpg 2x">
 
@@ -103,15 +97,13 @@
                   с натуральным фермерским молоком — то, что нужно
                   для расслабления после тяжёлого рабочего дня</p>
                 <div class="promo__price-container">
-
                   <p class="promo__price">295</p>
                   <p class="promo__price">225 ₽</p>
-
                   <a class="button promo__button modal-open" href="#">Заказать</a>
                 </div>
-              </div>
-              <div>
-                <picture>
+              </li>
+              <li class=" promo__item promo__item-img promo__item-img--active">
+                <picture class="promo__item-img">
                   <source media="(min-width: 1150px)" srcset="./img/header-coffee-desktop-lavender.webp 1x, ./img/header-coffee-desktop-lavender@2x.webp 2x" type="image/webp">
                   <source media="(min-width: 1150px)" srcset="./img/header-coffee-desktop-lavender.jpg 1x, ./img/header-coffee-desktop-lavender@2x.jpg 2x">
 
@@ -122,20 +114,18 @@
                   <img src="./img/header-coffee-mobile-lavender.jpg" srcset="./img/header-coffee-mobile-lavender@2x.jpg" alt="Декаф Флэт Уайт.">
                 </picture>
                 <div class="promo__title-container">
-                  <h2 class="promo__title title">Лавандовый Латте</h2>
+                  <h2 class="promo__title">Лавандовый Латте</h2>
                   <span class="promo__type">Новинка!</span>
-                </div>
                 <p class="promo__text">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+                </div>
                 <div class="promo__price-container">
-
                   <p class="promo__price">285</p>
                   <p class="promo__price">265 ₽</p>
-
                   <a class="button promo__button modal-open" href="#">Заказать</a>
                 </div>
-              </div>
-              <div>
-                <picture>
+              </li>
+              <li class=" promo__item promo__item-img promo__item-img--active">
+                <picture class="promo__item">
                   <source media="(min-width: 1150px)" srcset="./img/header-coffee-desktop-espresso.webp 1x, ./img/header-coffee-desktop-espresso@2x.webp 2x" type="image/webp">
                   <source media="(min-width: 1150px)" srcset="./img/header-coffee-desktop-espresso.jpg 1x, ./img/header-coffee-desktop-espresso@2x.jpg 2x">
 
@@ -150,6 +140,7 @@
                   <span class="promo__type">Новинка!</span>
                 </div>
                 <p class="promo__text">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+
                 <div class="promo__price-container">
 
                   <p class="promo__price">395</p>
@@ -157,51 +148,50 @@
 
                   <a class="button promo__button modal-open" href="#">Заказать</a>
                 </div>
-              </div>
-              <button class="items__control-arrow items__control-arrow--next" type="button" aria-label="Листать дальше.">
-                <span class="arrow-next">Вперед</span>
-              </button>
-            </div>
-            <!--
-            <div class="promo_coffee_variants__control">
-              <button class="promo_coffee_variants__control-bar" type="button" aria-label="Декаф Флэт Уайт.">  // придумать как переключать слайдер и вообще надо ли там что-то переключать
-                <span class="visually-hidden">Вариант 1</span>
+              </li>
+            </ol>
+            <div class="promo__control">
+              <button class="promo__control-arrow promo__control-arrow--prev" type="button" aria-label="Листать назад.">
+                <span class="visually-hidden">Назад</span>
                 <svg width="50" height="26" role="img">
-                  <use xlink:href=" "></use>
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+              </button>
+              <button class="promo__control-arrow promo__control-arrow--next" type="button" aria-label="Листать дальше.">
+                <span class="visually-hidden">Вперед</span>
+                <svg width="50" height="26" role="img">
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
                 </svg>
               </button>
             </div>
-            -->
           </div>
-        </section>
-      </div>
     </section>
     <section class="benefits">
       <div class="benefits__container container">
         <h2 class="benefits__title title">Главные причины выбрать Drink2Go</h2>
         <ul class="benefits__list list-reset">
-          <li class="benefits__item about__item--speed">
+          <li class="benefits__item-speed benefits__item-speed">
             <h2>Скорость</h2>
             Готовый напиток всегда под рукой — просто открой банку
           </li>
-          <li class="benefits__item about__item--fit">
+          <li class="benefits__item benefits__item-speed">
             <h2>Удобство</h2>
             Легко помещается и в карман, и в маленькую сумочку
           </li>
-          <li class="benefits__item about__item--energy">
+          <li class="benefits__item benefits__item-speed">
             <h2>Бодрость</h2>
             Сбалансированная доза кофеина даст мощный заряд энергии
           </li>
-          <li class="benefits__item about__item--eco">
+          <li class="benefits__item benefits__item-speed">
             <h2>Экологичность</h2>
             Вся упаковка сделана из перерабатываемых материалов
           </li>
         </ul>
       </div>
     </section>
-    <section>
+    <section class="catalog">
       <p>Каталог</p>
-      <h2 class="catalog_title">Каталог кофейных напитков</h2>
+      <h2 class="catalog-title">Каталог кофейных напитков</h2>
       <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="filter-group filter-group-radio">
           <legend class="filter-title">Наличие молока</legend>
@@ -519,7 +509,7 @@
               </a>
               <div class="catalog__list-container">
                 <div class="catalog__descrip">
-                  <a class="catalog__title" href="#">
+                  <a class="catalog__descrip-title" href="#">
                     <h3>Декаф Флэт Уайт</h3>
                   </a>
                   <p class="catalog__item-desc">Кофе без кофеина из Эфиопии
@@ -583,17 +573,17 @@
         <li class="pagination-item">
           <a class="pagination-link" href="#">3</a>
         </li>
-        <div class="items__control">
-          <button class="items__control-arrow items__control-arrow--prev" type="button" aria-label="Листать назад.">
+        <div class="pagination__control">
+          <button class="pagination__control-arrow pagination__control-arrow--prev" type="button" aria-label="Листать назад.">
             <span class="arrow-prev">Назад</span>
           </button>
-          <button class="items__control-arrow items__control-arrow--next" type="button" aria-label="Листать дальше.">
+          <button class="pagination__control-arrow pagination__control-arrow--next" type="button" aria-label="Листать дальше.">
             <span class="arrow-next">Вперед</span>
           </button>
         </div>
       </ul>
     </section>
-    <div class="contacts__map">
+    <div class="contacts">
       <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab18278131853beab38c1fbbe6f6b620ad14f4ebdd4bfbb67db7d7dc4b618a799&amp;source=constructor" width="100%" height="410" frameborder="0"></iframe>
       <div class="contacts__map-img">
         <picture>
@@ -642,43 +632,43 @@
         </li>
       </ul>
 
-      <ul class="nav__list nav__list--footer list-reset">
+      <ul class="footer__eshop eshop list-reset">
         <h2>Интернет-магазин</h2>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Каталог</a>
+        <li class="eshop__item">
+          <a class="eshop__link" href="#">Каталог</a>
         </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Доставка</a>
+        <li class="eshop__item">
+          <a class="eshop__link" href="#">Доставка</a>
         </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">О нас</a>
+        <li class="eshop__item">
+          <a class="eshop__link" href="#">О нас</a>
         </li>
       </ul>
-      <ul class="nav__list nav__list--footer list-reset">
+      <ul class="footer__media media list-reset">
         <h2>Медиа</h2>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Блог</a>
+        <li class="media__item">
+          <a class="media__link" href="#">Блог</a>
         </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Информация для СМИ</a>
+        <li class="media__item">
+          <a class="media__link" href="#">Информация для СМИ</a>
         </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Правовая информация</a>
+        <li class="media__item">
+          <a class="media__link" href="#">Правовая информация</a>
         </li>
       </ul>
-      <ul class="nav__list nav__list--footer list-reset">
+      <ul class="footer__contacts contacts list-reset">
         <h2>Контакты</h2>
-        <li class="nav__item">
+        <li class="contacts__item-address">
           <svg width="28" height="22" role="img" aria-label="Адрес.">
             <use xlink:href="img/sprite.svg#icon-address-pin"></use>
           </svg>
-          <a class="nav__link nav__link-addess" href="#">Санкт-Петербург, набережная реки Карповки, дом 5</a>
+          <a class="contacts__link contacts__link-address" href="#">Санкт-Петербург, набережная реки Карповки, дом 5</a>
         </li>
-        <li class="nav__item">
+        <li class="contacts__item contacts__item-phone">
           <svg width="28" height="22" role="img" aria-label="Телефон.">
             <use xlink:href="img/sprite.svg#icon-phone"></use>
           </svg>
-          <a class="nav__link nav__link-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a class="contacts__link contacts__link-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </li>
       </ul>
 
@@ -694,3 +684,4 @@
 </body>
 
 </html>
+
