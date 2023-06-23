@@ -9,10 +9,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-  <link rel="preload" href="./fonts/PTSans-Bold.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="./fonts/TTNorms-Regular.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="./fonts/PTSans-Bold.woff" as="font" crossorigin="anonymous">
-  <link rel="preload" href="./fonts/TTNorms-Regular.woff" as="font" crossorigin="anonymous">
+
 </head>
 
 <body class="page__body">
@@ -99,15 +96,15 @@
               <img src="./img/header-coffee-mobile-cream.png" srcset="./img/header-coffee-mobile-cream@2x.png" alt="Декаф Флэт Уайт.">
             </picture>
             <div class="promo__title-container">
-              <h2 class="promo__title title">Декаф Флэт Уайт</h2>
-              <span class="promo__type">Новинка!</span>
+              <h1 class="promo__title title">Декаф Флэт Уайт</h1>
+              <p class="promo__type">Новинка!</p>
             </div>
             <p class="promo__text">Свежесваренный кофе без кофеина из Эфиопии
               с натуральным фермерским молоком — то, что нужно
               для расслабления после тяжёлого рабочего дня</p>
             <div class="promo__price-container">
-              <p class="promo__price">295</p>
-              <p class="promo__price">225 ₽</p>
+            <p class="promo__price-old">295</p>
+            <p class="promo__price-discount">225 ₽</p>
               <button class="button promo__button modal-open" href="#">Заказать</button>
             </div>
 
@@ -124,13 +121,13 @@
               <img src="./img/header-coffee-mobile-lavender.png" srcset="./img/header-coffee-mobile-lavender@2x.png" alt="Декаф Флэт Уайт.">
             </picture>
             <div class="promo__title-container">
-              <h2 class="promo__title">Лавандовый Латте</h2>
-              <span class="promo__type">Новинка!</span>
+              <h1 class="promo__title">Лавандовый Латте</h1>
+              <p class="promo__type">Новинка!</p>
               <p class="promo__text">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
             </div>
             <div class="promo__price-container">
-              <p class="promo__price">285</p>
-              <p class="promo__price">265 ₽</p>
+            <p class="promo__price-old">295</p>
+            <p class="promo__price-discount">265 ₽</p>
             </div>
             <button class="button promo__button modal-open" href="#">Заказать</button>
 
@@ -147,16 +144,16 @@
               <img src="./img/header-coffee-mobile-espresso.png" srcset="./img/header-coffee-mobile-espresso@2x.png" alt="Декаф Флэт Уайт.">
             </picture>
             <div class="promo__title-container">
-              <h2 class="promo__title title">Тройной Эспрессо</h2>
-              <span class="promo__type">Новинка!</span>
+              <h1 class="promo__title title">Тройной Эспрессо</h1>
+              <p class="promo__type">Новинка!</p>
             </div>
             <p class="promo__text">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
 
             <div class="promo__price-container">
-              <p class="promo__price">395</p>
-              <p class="promo__price">375 ₽</p>
+              <p class="promo__price-old">395</p>
+              <p class="promo__price-discount">375 ₽</p>
             </div>
-            <button class="button promo__button modal-open"   href="#">Заказать</button>
+            <button class="button promo__button modal-open" href="#">Заказать</button>
           </li>
         </ol>
         <div class="promo__control">
@@ -171,21 +168,26 @@
     </section>
     <section class="benefits">
       <div class="benefits__container container">
-        <h2 class="benefits__title title">Главные причины выбрать Drink2Go</h2>
+        <p class="benefits__container-text">Преимущества</p>
+        <h1 class="benefits__title title">Главные причины выбрать Drink2Go</h1>
         <ul class="benefits__list list-reset">
-          <li class="benefits__item-speed benefits__item-speed">
+          <li class="benefits__item benefits__item-speed">
+          <img src="./img/svg/benefits-speed.svg" alt="Скорость.">
             <h2>Скорость</h2>
             Готовый напиток всегда под рукой — просто открой банку
           </li>
-          <li class="benefits__item benefits__item-speed">
+          <li class="benefits__item benefits__item-fit">
+            <img src="./img/svg/benefits-fit.svg" alt="Удобство.">
             <h2>Удобство</h2>
             Легко помещается и в карман, и в маленькую сумочку
           </li>
-          <li class="benefits__item benefits__item-speed">
+          <li class="benefits__item benefits__item-energy">
+            <img src="./img/svg/benefits-energy.svg" alt="Бодрость.">
             <h2>Бодрость</h2>
             Сбалансированная доза кофеина даст мощный заряд энергии
           </li>
-          <li class="benefits__item benefits__item-speed">
+          <li class="benefits__item benefits__item-eco">
+            <img src="./img/svg/benefits-eco.svg" alt="Экологичность.">
             <h2>Экологичность</h2>
             Вся упаковка сделана из перерабатываемых материалов
           </li>
@@ -194,7 +196,7 @@
     </section>
     <section class="catalog">
       <p>Каталог</p>
-      <h2 class="catalog-title">Каталог кофейных напитков</h2>
+      <h1 class="catalog-title">Каталог кофейных напитков</h1>
       <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="filter-group filter-group-radio">
           <legend class="filter-title">Наличие молока</legend>
@@ -247,7 +249,7 @@
         </fieldset>
 
         <div class="filter-button">
-          <button class="button button-blue filter-submit" type="submit">Применить</button>
+          <button class="button button-apply filter-submit" type="submit">Применить</button>
           <button class="button button-transparent filter-reset" type="reset">Сбросить</button>
         </div>
       </form>
@@ -281,9 +283,7 @@
               </a>
               <div class="catalog__list-container">
                 <div class="catalog__descrip">
-                  <a class="catalog__title" href="#">
-                    <h3>Декаф Флэт Уайт</h3>
-                  </a>
+                    <h3 class="catalog__title">Декаф Флэт Уайт</h3>
                   <p class="catalog__item-desc">Кофе без кофеина из Эфиопии
                     с натуральным фермерским молоком</p>
                 </div>
@@ -314,9 +314,7 @@
               </a>
               <div class="catalog__list-container">
                 <div class="catalog__descrip">
-                  <a class="catalog__title" href="#">
-                    <h3>Декаф Флэт Уайт</h3>
-                  </a>
+                    <h3 class="catalog__title">Декаф Флэт Уайт</h3>
                   <p class="catalog__item-desc">Кофе без кофеина из Эфиопии
                     с натуральным фермерским молоком</p>
                 </div>
@@ -347,16 +345,14 @@
               </a>
               <div class="catalog__list-container">
                 <div class="catalog__descrip">
-                  <a class="catalog__title" href="#">
-                    <h3>Декаф Флэт Уайт</h3>
-                  </a>
+                    <h3 class="catalog__title">Декаф Флэт Уайт</h3>
                   <p class="catalog__item-desc">Кофе без кофеина из Эфиопии
                     с натуральным фермерским молоком</p>
                 </div>
                 <div class="catalog__price-wrapper">
                   <span class="catalog__price">225₽</span>
 
-                  <button class="catalog__cart modal-open" href="#" aria-label="Добавить в корзину.">
+                  <button class="catalog__cart" href="#" aria-label="Добавить в корзину.">
                     <span>В корзину</span>
                     <svg width="21" height="19" role="img">
                       <use xlink:href="./img/sprite.svg#icon-add-to-cart"></use>
@@ -380,9 +376,7 @@
               </a>
               <div class="catalog__list-container">
                 <div class="catalog__descrip">
-                  <a class="catalog__title" href="#">
-                    <h3>Декаф Флэт Уайт</h3>
-                  </a>
+                  <h3 class="catalog__title">Декаф Флэт Уайт</h3>
                   <p class="catalog__item-desc">Кофе без кофеина из Эфиопии
                     с натуральным фермерским молоком</p>
                 </div>
@@ -412,9 +406,7 @@
               </a>
               <div class="catalog__list-container">
                 <div class="catalog__descrip">
-                  <a class="catalog__title" href="#">
-                    <h3>Декаф Флэт Уайт</h3>
-                  </a>
+                  <h3 class="catalog__title">Декаф Флэт Уайт</h3>
                   <p class="catalog__item-desc">Кофе без кофеина из Эфиопии
                     с натуральным фермерским молоком</p>
                 </div>
@@ -445,9 +437,7 @@
               </a>
               <div class="catalog__list-container">
                 <div class="catalog__descrip">
-                  <a class="catalog__title" href="#">
-                    <h3>Декаф Флэт Уайт</h3>
-                  </a>
+                    <h3 class="catalog__title">Декаф Флэт Уайт</h3>
                   <p class="catalog__item-desc">Кофе без кофеина из Эфиопии
                     с натуральным фермерским молоком</p>
                 </div>
@@ -478,9 +468,7 @@
               </a>
               <div class="catalog__list-container">
                 <div class="catalog__descrip">
-                  <a class="catalog__title" href="#">
-                    <h3>Декаф Флэт Уайт</h3>
-                  </a>
+                  <h3 class="catalog__title">Декаф Флэт Уайт</h3>
                   <p class="catalog__item-desc">Кофе без кофеина из Эфиопии
                     с натуральным фермерским молоком</p>
                 </div>
@@ -511,9 +499,7 @@
               </a>
               <div class="catalog__list-container">
                 <div class="catalog__descrip">
-                  <a class="catalog__descrip-title" href="#">
-                    <h3>Декаф Флэт Уайт</h3>
-                  </a>
+                 <h3 class="catalog__title">Декаф Флэт Уайт</h3>
                   <p class="catalog__item-desc">Кофе без кофеина из Эфиопии
                     с натуральным фермерским молоком</p>
                 </div>
@@ -544,9 +530,7 @@
               </a>
               <div class="catalog__list-container">
                 <div class="catalog__descrip">
-                  <a class="catalog__title" href="#">
-                    <h3>Декаф Флэт Уайт</h3>
-                  </a>
+                  <h3 class="catalog__title">Декаф Флэт Уайт</h3>
                   <p class="catalog__item-desc">Кофе без кофеина из Эфиопии
                     с натуральным фермерским молоком</p>
                 </div>
@@ -577,10 +561,10 @@
         </li>
         <div class="pagination__control">
           <button class="pagination__control-arrow pagination__control-arrow--prev" type="button" aria-label="Листать назад.">
-            <span class="arrow-prev">Назад</span>
+            <span class="arrow-prev visually-hidden">Назад</span>
           </button>
           <button class="pagination__control-arrow pagination__control-arrow--next" type="button" aria-label="Листать дальше.">
-            <span class="arrow-next">Вперед</span>
+            <span class="arrow-next visually-hidden">Вперед</span>
           </button>
         </div>
       </ul>
@@ -637,7 +621,8 @@
       <ul class="footer__eshop eshop list-reset">
         <h2>Интернет-магазин</h2>
         <li class="eshop__item">
-          <a class="eshop__link" href="#">Каталог</a>
+          <a class="eshop__link" href="#">Каталог
+          </a>
         </li>
         <li class="eshop__item">
           <a class="eshop__link" href="#">Доставка</a>
@@ -674,7 +659,7 @@
         </li>
       </ul>
 
-      <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="link footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="copyright__text">Разработано в HTML Academy</span>
         <svg width="28" height="22" role="img" aria-label="Логотип HTML Academy.">
           <use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use>

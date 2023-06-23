@@ -12,7 +12,6 @@ body {
   padding: 0;
 }
 
-
 body {
   position: relative;
 
@@ -21,18 +20,17 @@ body {
 
   font-size: 15px;
   line-height: 30px;
-  font-family: $font-regular;
+  font-family: $fonts;
   color: #444444;
 
   grid-template-rows: auto 1fr auto;
 }
 
-
-h1,
-h2,
-h3 {
-  font-family: $font-bold;
+h1 {
+  font-size: 30px;
 }
+
+
 
 img {
   max-width: 100%;

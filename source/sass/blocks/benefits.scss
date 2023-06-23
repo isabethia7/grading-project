@@ -1,0 +1,26 @@
+.benefits {
+  text-align: center;
+  margin-bottom: 50px;
+  background-color: #ffffff;
+  padding: 30px 12px 30px 12px;
+  align-content: center;
+  align-items: center;
+}
+
+.benefits__container-text {
+  font-weight: 700;
+  color: #7859cf;
+}
+
+.benefits__list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefits__item {
+  width: 280px;
+  padding-bottom: 20px;
+}
+
