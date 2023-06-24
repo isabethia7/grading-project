@@ -1,24 +1,114 @@
 .catalog {
-  background: #F8F8F8;
+  background: #f8f8f8;
+  min-width: 320px;
 }
+
+
+
+.catalog__pretitle {
+  color: var(--base-primary, #7859cf);
+
+  font-size: 12px;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.catalog__title {
+  text-align: center;
+}
+
+.catalog__title h1 {
+  width: 280px;
+
+  color: var(--base-black, #333);
+  text-align: center;
+  font-size: 24px;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+
+
 
 .catalog__list-container {
   text-decoration: none;
 }
 
-
 .catalog__cart {
   display: flex;
-width: 141px;
-height: 36px;
-padding: 8px 20px;
-justify-content: center;
-align-items: center;
-gap: 6px;
-flex-shrink: 0;
+  flex-direction: row;
+  width: 141px;
+  height: 36px;
+  padding: 8px 20px;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  color: var(--base-white, #fff);
+  font-size: 14px;
+  font-family: Montserrat;
+  line-height: 20px;
 
-border-radius: 4px;
-border-color: transparent;
-background: var(--base-primary, #7859CF);
-color: #FFFFFF;
+  border-radius: 4px;
+  border-color: transparent;
+  background: var(--base-primary, #7859cf);
+  color: #ffffff;
 }
+
+.catalog__sorting-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.catalog__sorting-select {
+  color: #7859cf;
+  font-weight: 600;
+  font-family: $fonts;
+  font-size: 16px;
+  border-color: transparent;
+  background: #f8f8f8;
+}
+
+.catalog__sorting-title {
+  color: #333333;
+  font-weight: 600;
+  font-family: $fonts;
+  font-size: 16px;
+}
+
+
+
+.catalog__item {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  height: 420px;
+  margin-bottom: 20px;
+  background-image: url("../../img/card-background.png");
+  justify-content: center;
+  padding: 20px;
+}
+
+
+.catalog__price-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+
+.catalog__price {
+  color: var(--base-black, #333);
+
+  font-size: 20px;
+  font-family: Montserrat;
+  font-weight: 600;
+  line-height: 32px;
+}
+
