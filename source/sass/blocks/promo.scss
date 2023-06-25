@@ -4,18 +4,34 @@
   margin-bottom: 50px;
   background-color: #f3ebe1;
   padding: 30px 12px 30px 12px;
+
 }
 
 .promo__container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  margin-left: 80px;
+  margin-right: 80px;
 
   align-items: center;
+  @media (min-width: 767px) {
+    display: flex;
+    flex-direction: column;
+  }
   //justify-content: space-between;
 }
 
 .promo__type {
-  font-weight: 700;
+
+  color: var(--base-primary, #7859CF);
+text-align: center;
+/* Badge */
+font-size: 12px;
+font-family: Montserrat;
+font-weight: 700;
+line-height: 16px;
+letter-spacing: 0.48px;
+text-transform: uppercase;
 }
 
 .promo__item-img--lavender {
@@ -27,25 +43,41 @@
 }
 
 .promo__control-arrow {
-  margin: 0 auto;
   background-color: transparent;
   border-color: transparent;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+
+}
+
+.promo__control-arrow--prev {
+  left: 10px;
+}
+
+.promo__control-arrow--next {
+  right: -20px;
+  @media (min-width: 767px) {
+    right: 10px;
+  }
 }
 
 .promo__price-container {
   display: flex;
   align-items: center;
   line-height: 32px;
-  justify-content: space-between;
+  justify-content: center;
   font-family: Montserrat;
   font-size: 16px;
   color: var(--base-primary, #7859cf);
+  gap: 10px;
+  //row-gap: 10px;
 }
 
 .promo__price-old {
   display: inline-flex;
   align-items: flex-start;
-  gap: 10px;
+
   text-decoration: line-through;
 }
 
@@ -80,16 +112,14 @@
   display: flex;
   flex-direction: column;
   flex: 1 0 0;
-  align-content: space-around;
+  align-content: center;
 
-  color: var(--base-black, #333);
+  color: #000000;
   text-align: center;
-
-  width: 280px;
-  align-items: flex-start;
   gap: 10px;
-  /* Slider Description Desktop&Tablet */
-  //font-size: 14px;
-  //font-family: Montserrat;
-  //line-height: 20px;
+
+  font-size: 14px;
+  font-family: Montserrat;
+  line-height: 20px;
+
 }

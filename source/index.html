@@ -74,15 +74,16 @@
   <main>
 
     <section class="promo">
+
+      <button class="promo__control-arrow promo__control-arrow--prev" type="button" aria-label="Листать назад.">
+
+        <svg width="50" height="26" role="img">
+          <use xlink:href="img/sprite.svg#arrow-left"></use>
+        </svg>
+      </button>
+
       <div class="promo__container container">
-        <div class="promo__control">
-          <button class="promo__control-arrow promo__control-arrow--prev" type="button" aria-label="Листать назад.">
-            <span class="visually-hidden">Назад</span>
-            <svg width="50" height="26" role="img">
-              <use xlink:href="img/sprite.svg#arrow-left"></use>
-            </svg>
-          </button>
-        </div>
+
         <ol class="promo__list list-reset">
           <li class=" promo__item promo__item-img promo__item-img--cream">
             <picture class=" promo__item-img">
@@ -96,12 +97,13 @@
               <img src="./img/header-coffee-mobile-cream.png" srcset="./img/header-coffee-mobile-cream@2x.png" alt="Декаф Флэт Уайт.">
             </picture>
             <div class="promo__title-container">
-              <h1 class="promo__title title">Декаф Флэт Уайт</h1>
               <p class="promo__type">Новинка!</p>
+              <h1 class="promo__title title">Декаф Флэт Уайт</h1>
+
+              <p class="promo__text">Свежесваренный кофе без кофеина из Эфиопии
+                с натуральным фермерским молоком — то, что нужно
+                для расслабления после тяжёлого рабочего дня</p>
             </div>
-            <p class="promo__text">Свежесваренный кофе без кофеина из Эфиопии
-              с натуральным фермерским молоком — то, что нужно
-              для расслабления после тяжёлого рабочего дня</p>
             <div class="promo__price-container">
               <p class="promo__price-old">295</p>
               <p class="promo__price-discount">225 ₽</p>
@@ -156,20 +158,23 @@
             <button class="button promo__button modal-open" href="#">Заказать</button>
           </li>
         </ol>
-        <div class="promo__control">
-          <button class="promo__control-arrow promo__control-arrow--next" type="button" aria-label="Листать дальше.">
-            <span class="visually-hidden">Вперед</span>
-            <svg width="50" height="26" role="img">
-              <use xlink:href="img/sprite.svg#arrow-right"></use>
-            </svg>
-          </button>
-        </div>
+
       </div>
+
+      <button class="promo__control-arrow promo__control-arrow--next" type="button" aria-label="Листать дальше.">
+
+        <svg width="50" height="26" role="img">
+          <use xlink:href="img/sprite.svg#arrow-right"></use>
+        </svg>
+      </button>
+
     </section>
     <section class="benefits">
       <div class="benefits__container container">
-        <p class="benefits__container-text">Преимущества</p>
-        <h1 class="benefits__title title">Главные причины выбрать Drink2Go</h1>
+        <div class="benefits__container-text">
+          <p class="benefits__text">Преимущества</p>
+          <h1 class="benefits__title">Главные причины выбрать Drink2Go</h1>
+        </div>
         <ul class="benefits__list list-reset">
           <li class="benefits__item benefits__item-speed">
             <img src="./img/svg/benefits-speed.svg" alt="Скорость.">
@@ -194,6 +199,8 @@
         </ul>
       </div>
     </section>
+
+
     <section class="catalog">
 
       <p class="catalog__pretitle">Каталог</p>
@@ -239,7 +246,6 @@
           </div>
         </fieldset>
 
-
         <fieldset class="filter-group filter-group-check">
           <legend class="filter-title">Страна произрастания</legend>
           <div class="filter-list">
@@ -262,6 +268,7 @@
         </div>
       </form>
 
+
       <section class="catalog__sorting-container">
         <h2 class="catalog__sorting-title">Сортировка:</h2>
         <select class="select catalog__sorting-select">
@@ -272,9 +279,8 @@
         </select>
       </section>
 
-      <section class="catalog">
+
         <div class="catalog__container container">
-          <h2 class="visually-hidden">Товары</h2>
           <ul class="catalog__list list-reset">
             <li class="catalog__item">
               <a class="catalog__image" href="#">
@@ -530,7 +536,7 @@
                   <source media="(min-width: 1150px)" srcset="./img/coffee-can-9.webp  1x, ./img/coffee-can-9@2x.webp 2x" type="image/webp">
                   <source media="(min-width: 1150px)" srcset="./img/coffee-can-9.jpg 1x, ./img/coffee-can-9@2x.jpg 2x">
 
-                  <source media="(min-width: 767px)" srcset="./img/coffee-can-6.webp 1x, ./img/coffee-can-6@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 767px)" srcset="./img/coffee-can-9.webp 1x, ./img/coffee-can-9@2x.webp 2x" type="image/webp">
                   <source media="(min-width: 767px)" srcset="./img/coffee-can-9.jpg 1x, ./img/coffee-can-9@2x.jpg 2x">
 
                   <source srcset="./img/coffee-can-9.webp 1x, ./img/coffee-can-9@2x.webp 2x" type="image/webp">
@@ -557,59 +563,60 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="pagination-container list-reset">
 
-        <div class="arrow__container container">
-          <div class="pagination__item">
-            <button class="pagination__control-arrow pagination__control-arrow--prev" type="button" aria-label="Листать назад.">
-              <span class="visually-hidden">Назад</span>
-              <svg width="50" height="26" role="img">
-                <use xlink:href="img/sprite.svg#arrow-left"></use>
-              </svg>
-              <span class="visually-hidden">Назад</span>
-            </button>
+        <section class="pagination-container list-reset">
+
+          <div class="arrow__container container">
+            <div class="pagination__item">
+              <button class="pagination__control-arrow pagination__control-arrow--prev" type="button" aria-label="Листать назад.">
+                <svg role="img">
+                  <use xlink:href="img/sprite.svg#pagination-arrow-left"></use>
+                </svg>
+                <span class="visually-hidden">Назад</span>
+              </button>
+            </div>
           </div>
-        </div>
 
-        <button class="pagination-item pagination-item-numbers">
-          <span class="pagination-item-1">1</span>
-        </button>
-        <button class="pagination-item pagination-item-numbers">
-          <span class="pagination-item-2">2</span>
-        </button>
-        <button class="pagination-item pagination-item-numbers">
-          <span class="pagination-item-2">3</span>
-        </button>
+          <button class="pagination-item pagination-item-numbers">
+            <span class="pagination-item-1">1</span>
+          </button>
+          <button class="pagination-item pagination-item-numbers">
+            <span class="pagination-item-2">2</span>
+          </button>
+          <button class="pagination-item pagination-item-numbers">
+            <span class="pagination-item-3">3</span>
+          </button>
 
-        <div class="arrow__container container">
-          <div class="pagination__item ">
-            <button class="pagination__control-arrow pagination__control-arrow--prev" type="button" aria-label="Листать назад.">
-              <span class="visually-hidden">Назад</span>
-              <svg width="50" height="26" role="img">
-                <use xlink:href="img/sprite.svg#arrow-right"></use>
-              </svg>
-              <span class="visually-hidden">Назад</span>
-            </button>
+          <div class="arrow__container container">
+            <div class="pagination__item">
+              <button class="pagination__control-arrow pagination__control-arrow--prev" type="button" aria-label="Листать назад.">
+                <svg role="img">
+                  <use xlink:href="img/sprite.svg#pagination-arrow-right"></use>
+                </svg>
+                <span class="visually-hidden">Вперед</span>
+              </button>
+            </div>
           </div>
-        </div>
+        </section>
       </section>
-      <div class="map-scheme">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab18278131853beab38c1fbbe6f6b620ad14f4ebdd4bfbb67db7d7dc4b618a799&amp;source=constructor" width="100%" height="410" frameborder="0"> </iframe>
-        <div class="contacts__map-img">
-          <!--
-        <picture>
-          <source media="(min-width: 1150px)" srcset="./img/map-desktop.webp 1x, ./img/map-desktop@2x.webp 2x" type="image/webp">
-          <source media="(min-width: 1150px)" srcset="./img/map-desktop.jpg 1x, ./img/map-desktop@2x.jpg 2x">
-          <source media="(min-width: 767px)" srcset="./img/map-tablet.webp 1x, ./img/map-tablet@2x.webp 2x" type="image/webp">
-          <source media="(min-width: 767px)" srcset="./img/map-tablet.jpg 1x, ./img/map-tablet@2x.jpg 2x">
-          <source srcset="./img/map-mobile.webp 1x, ./img/map-mobile@2x.webp 2x" type="image/webp">
-          <img src="./img/map-mobile.jpg" srcset="./img/map-mobile@2x.jpg" alt="Карта.">
-        </picture>
-      -->
-        </div>
-      </div>
-    </section>
+
+
+    <div class="map-scheme">
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab18278131853beab38c1fbbe6f6b620ad14f4ebdd4bfbb67db7d7dc4b618a799&amp;source=constructor" width="100%" height="410" frameborder="0"> </iframe>
+      <!--
+                  <div class="contacts__map-img">
+
+                  <picture>
+                    <source media="(min-width: 1150px)" srcset="./img/map-desktop.webp 1x, ./img/map-desktop@2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 1150px)" srcset="./img/map-desktop.jpg 1x, ./img/map-desktop@2x.jpg 2x">
+                    <source media="(min-width: 767px)" srcset="./img/map-tablet.webp 1x, ./img/map-tablet@2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 767px)" srcset="./img/map-tablet.jpg 1x, ./img/map-tablet@2x.jpg 2x">
+                    <source srcset="./img/map-mobile.webp 1x, ./img/map-mobile@2x.webp 2x" type="image/webp">
+                    <img src="./img/map-mobile.jpg" srcset="./img/map-mobile@2x.jpg" alt="Карта.">
+                  </picture>
+                  </div>
+                   -->
+    </div>
   </main>
 
   <footer class="footer">
@@ -650,6 +657,7 @@
         </div>
       </ul>
 
+      <section class="footer__navigation">
       <ul class="footer__eshop eshop list-reset">
         <h2>Интернет-магазин</h2>
         <li class="footer__eshop-item">
@@ -691,14 +699,15 @@
           <a class="contacts__link contacts__link-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </li>
       </ul>
-      <ul class="footer__copyright">
+      </section>
+      <div class="footer__copyright">
         <a class=" footer__copyright-link copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">Разработано в HTML Academy</span>
           <svg width="28" height="22" role="img" aria-label="Логотип HTML Academy.">
             <use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use>
           </svg>
         </a>
-      </ul>
+      </div>
     </div>
   </footer>
   <!--<script src="./js/script.js" defer></script>-->
