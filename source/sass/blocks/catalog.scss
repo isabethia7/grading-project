@@ -2,7 +2,7 @@
   background: #f8f8f8;
   min-width: 320px;
   padding-top: 50px;
-  
+
   display: flex;
   flex-direction: column;
   @media (min-width: 767px) {
@@ -14,7 +14,7 @@
 .catalog__pretitle {
   color: var(--base-primary, #7859cf);
 
-  font-size: 12px;
+  font-size: 14px;
   font-family: Montserrat;
   font-weight: 700;
   line-height: 16px;
@@ -45,6 +45,10 @@
     font-weight: 700;
     line-height: 64px;
   }
+}
+
+.catalog__title-container {
+  margin: 0px 20px 0px 20px;
 }
 
 .catalog__list {
