@@ -4,7 +4,7 @@
   margin-bottom: 50px;
   background-color: #f3ebe1;
   padding: 30px 12px 30px 12px;
-
+  height: 640px;
 }
 
 .promo__container {
@@ -17,21 +17,28 @@
   @media (min-width: 767px) {
     display: flex;
     flex-direction: column;
+    margin-left: 150px;
   }
-  //justify-content: space-between;
+
 }
 
 .promo__type {
+  color: var(--base-primary, #7859cf);
+  text-align: center;
+  /* Badge */
+  font-size: 12px;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+}
 
-  color: var(--base-primary, #7859CF);
-text-align: center;
-/* Badge */
-font-size: 12px;
-font-family: Montserrat;
-font-weight: 700;
-line-height: 16px;
-letter-spacing: 0.48px;
-text-transform: uppercase;
+.promo__item-img img{
+  @media (min-width: 767px) {
+    position: relative;
+    top: 350px;
+  }
 }
 
 .promo__item-img--lavender {
@@ -48,12 +55,10 @@ text-transform: uppercase;
   position: absolute;
   top: 50%;
   margin-top: -35px;
-
 }
 
 .promo__control-arrow--prev {
   left: 10px;
-
 }
 
 .promo__control-arrow--next {
@@ -109,6 +114,14 @@ text-transform: uppercase;
   letter-spacing: 0.72px;
 }
 
+.promo__container-text {
+  @media (min-width: 767px) {
+    position: relative;
+    bottom: 470px;
+
+  }
+}
+
 .promo__text {
   display: flex;
   flex-direction: column;
@@ -122,5 +135,16 @@ text-transform: uppercase;
   font-size: 14px;
   font-family: Montserrat;
   line-height: 20px;
+  @media (min-width: 767px) {
+    flex: 1 0 0;
+    color: var(--base-black, #333);
+    text-align: center;
 
+    /* Slider Description Desktop&Tablet */
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+  }
 }

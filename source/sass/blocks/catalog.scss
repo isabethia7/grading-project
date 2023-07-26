@@ -25,6 +25,16 @@
 
 .catalog__title {
   text-align: center;
+  @media (min-width: 767px) {
+    text-align: start;
+    color: var(--base-black, #333);
+    /* Heading3 Desktop&Tablet */
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; /* 150% */
+  }
 }
 
 .catalog__title h1 {
@@ -95,17 +105,16 @@
 .catalog__sorting-container {
   display: flex;
   flex-direction: row;
-  //align-items: center;
-  justify-content: space-between;
-  margin: 20px;
+  margin: 40px 0px 20px 110px;
   @media (min-width: 767px) {
-    display: flex;
-    justify-content: flex-end;
+
+    margin-right:-340px ;
     gap: 20px;
   }
 }
 
 .catalog__sorting-select {
+  margin-left: 20px;
   color: #7859cf;
   font-weight: 600;
   font-family: $fonts;
@@ -125,16 +134,24 @@
   display: flex;
   flex-direction: column;
   width: 280px;
-  height: 420px;
+  height: 450px;
   margin-bottom: 20px;
   background-image: url("../../img/card-background.png");
   justify-content: center;
-  padding: 20px;
+  padding: 20px 20px 20px 20px;
+  @media (min-width: 767px) {
+    width: 349px;
+    height: 440px;
+    padding: 20px 20px 0px 20px;
+
+  }
 }
 
 .catalog__item img {
   margin-left: 50px;
-  padding-top: 20px;
+  @media (min-width: 767px) {
+   margin: 20px 0px -20px 90px;
+  }
 }
 
 .catalog__price-wrapper {
@@ -151,4 +168,3 @@
   font-weight: 600;
   line-height: 32px;
 }
-

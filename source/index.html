@@ -82,7 +82,7 @@
         </svg>
       </button>
 
-      <div class="promo__container container">
+      <div class="promo__container">
 
         <ol class="promo__list list-reset">
           <li class=" promo__item promo__item-img promo__item-img--cream">
@@ -96,6 +96,7 @@
               <source srcset="./img/header-coffee-mobile-cream.webp 1x, ./img/header-coffee-mobile-cream@2x.webp 2x" type="image/webp">
               <img src="./img/header-coffee-mobile-cream.png" srcset="./img/header-coffee-mobile-cream@2x.png" alt="Декаф Флэт Уайт.">
             </picture>
+            <section class="promo__container-text">
             <div class="promo__title-container">
               <p class="promo__type">Новинка!</p>
               <h1 class="promo__title title">Декаф Флэт Уайт</h1>
@@ -109,7 +110,7 @@
               <p class="promo__price-discount">225 ₽</p>
               <button class="button promo__button modal-open" href="#">Заказать</button>
             </div>
-
+            </section>
           </li>
           <li class=" promo__item promo__item-img promo__item-img--lavender">
             <picture class="promo__item-img">
@@ -220,10 +221,10 @@
               <input type="range" id="max-range" class="max" min="0" max="1000" value="700" step="10">
             </div>
             <div class="range-price">
-                <label for="min"></label>
-                <input  type="number" id="min" name="min" value="300">
-                <label for="max"></label>
-                <input  type="number" id="max" name="max" value="700">
+              <label for="min"></label>
+              <input type="number" id="min" name="min" value="300">
+              <label for="max"></label>
+              <input type="number" id="max" name="max" value="700">
             </div>
           </div>
         </fieldset>
@@ -231,21 +232,21 @@
           <legend class="filter-title">Наличие молока</legend>
           <div class="filter-list">
             <div>
-            <input class="filter-input filter-input-radio" type="radio" name="product-group" value="unimportant" id="unimportant" checked>
+              <input class="filter-input filter-input-radio" type="radio" name="product-group" value="unimportant" id="unimportant" checked>
 
-            <label class="filter-control" for="unimportant">Неважно</label>
+              <label class="filter-control" for="unimportant">Неважно</label>
             </div>
             <div>
-            <input class="filter-input filter-input-radio" type="radio" name="product-group" value="dairy" id="dairy">
-            <label class="filter-control" for="dairy">Только животное</label>
+              <input class="filter-input filter-input-radio" type="radio" name="product-group" value="dairy" id="dairy">
+              <label class="filter-control" for="dairy">Только животное</label>
             </div>
             <div>
-            <input class="filter-input filter-input-radio" type="radio" name="product-group" value="non-dairy" id="non-dairy">
-            <label class="filter-control" for="non-dairy">Только растительное</label>
+              <input class="filter-input filter-input-radio" type="radio" name="product-group" value="non-dairy" id="non-dairy">
+              <label class="filter-control" for="non-dairy">Только растительное</label>
             </div>
             <div>
-            <input class="filter-input filter-input-radio" type="radio" name="product-group" value="no-milk" id="no-milk">
-            <label class="filter-control" for="no-milk">Без молока</label>
+              <input class="filter-input filter-input-radio" type="radio" name="product-group" value="no-milk" id="no-milk">
+              <label class="filter-control" for="no-milk">Без молока</label>
             </div>
           </div>
         </fieldset>
@@ -254,33 +255,34 @@
           <legend class="filter-title">Страна произрастания</legend>
           <div class="filter-list">
             <div>
-            <input class="filter-input filter-input-check" type="checkbox" name="Brazil" id="Brazil" checked>
-            <label class="filter-control" for="Brazil">Бразилия</label>
+              <input class="filter-input filter-input-check" type="checkbox" name="Brazil" id="Brazil" checked>
+              <label class="filter-control" for="Brazil">Бразилия</label>
             </div>
             <div>
-            <input class="filter-input filter-input-check" type="checkbox" name="Efiopiya" id="Efiopiya">
-            <label class="filter-control" for="Efiopiya">Эфиопия</label>
+              <input class="filter-input filter-input-check" type="checkbox" name="Efiopiya" id="Efiopiya">
+              <label class="filter-control" for="Efiopiya">Эфиопия</label>
             </div>
             <div>
-            <input class="filter-input filter-input-check" type="checkbox" name="Columbia" id="Columbia">
-            <label class="filter-control" for="Columbia">Колумбия</label>
+              <input class="filter-input filter-input-check" type="checkbox" name="Columbia" id="Columbia">
+              <label class="filter-control" for="Columbia">Колумбия</label>
             </div>
             <div>
-            <input class="filter-input filter-input-check" type="checkbox" name="Costa-rica" id="Costa-rica">
-            <label class="filter-control" for="Costa-rica">Коста-Рика</label>
+              <input class="filter-input filter-input-check" type="checkbox" name="Costa-rica" id="Costa-rica">
+              <label class="filter-control" for="Costa-rica">Коста-Рика</label>
             </div>
             <div>
-            <input class="filter-input filter-input-check" type="checkbox" name="Peru" id="Peru">
-            <label class="filter-control" for="Peru">Перу</label>
+              <input class="filter-input filter-input-check" type="checkbox" name="Peru" id="Peru">
+              <label class="filter-control" for="Peru">Перу</label>
             </div>
           </div>
         </fieldset>
 
-        <div class="filter-button">
-          <button class="button button-apply filter-submit" type="submit">Применить</button>
-          <button class="button button-transparent filter-reset" type="reset">Сбросить</button>
-        </div>
       </form>
+
+              <div class="filter-button">
+                <button class="button button-apply filter-submit" type="submit">Применить</button>
+                <button class="button button-transparent filter-reset" type="reset">Сбросить</button>
+              </div>
 
       <section class="catalog__sorting-container">
         <h2 class="catalog__sorting-title">Сортировка:</h2>
@@ -350,7 +352,7 @@
                   <svg width="21" height="19" role="img">
                     <use xlink:href="./img/sprite.svg#icon-add-to-cart"></use>
                   </svg>
-                  <span>В корзину</span>
+                  <span class="catalog__cart-text">В корзину</span>
                 </button>
               </div>
             </div>
@@ -610,29 +612,17 @@
           </div>
         </div>
       </section>
+
     </section>
 
     <div class="map-scheme">
-      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab18278131853beab38c1fbbe6f6b620ad14f4ebdd4bfbb67db7d7dc4b618a799&amp;source=constructor" width="100%" height="410" frameborder="0"> </iframe>
-      <!--
-                  <div class="contacts__map-img">
-
-                  <picture>
-                    <source media="(min-width: 1150px)" srcset="./img/map-desktop.webp 1x, ./img/map-desktop@2x.webp 2x" type="image/webp">
-                    <source media="(min-width: 1150px)" srcset="./img/map-desktop.jpg 1x, ./img/map-desktop@2x.jpg 2x">
-                    <source media="(min-width: 767px)" srcset="./img/map-tablet.webp 1x, ./img/map-tablet@2x.webp 2x" type="image/webp">
-                    <source media="(min-width: 767px)" srcset="./img/map-tablet.jpg 1x, ./img/map-tablet@2x.jpg 2x">
-                    <source srcset="./img/map-mobile.webp 1x, ./img/map-mobile@2x.webp 2x" type="image/webp">
-                    <img src="./img/map-mobile.jpg" srcset="./img/map-mobile@2x.jpg" alt="Карта.">
-                  </picture>
-                  </div>
-                   -->
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab18278131853beab38c1fbbe6f6b620ad14f4ebdd4bfbb67db7d7dc4b618a799&amp;source=constructor" width="100%" height="410" frameborder="0"></iframe>
     </div>
   </main>
 
   <footer class="footer">
 
-    <div class="footer__wrapper container">
+    <div class="footer__wrapper-container">
       <ul class="footer__social social list-reset">
         <li>
           <a href="./index.html">
@@ -668,36 +658,43 @@
         </div>
       </ul>
 
+      <div class="create-line"></div>
+
       <section class="footer__navigation">
         <ul class="footer__eshop eshop list-reset">
-          <h2>Интернет-магазин</h2>
+          <p class="footer__eshop-item--title">Интернет-магазин</p>
           <li class="footer__eshop-item">
-            <a class="footer__eshop-item--link" href="#">Каталог
-            </a>
-          </li>
-          <li class="footer__eshop-item">
-            <a class="footer__eshop-item--link" href="#">Доставка</a>
+            <a class="footer__eshop-item--link" href="#">КАТАЛОГ</a>
+
           </li>
           <li class="footer__eshop-item">
-            <a class="footer__eshop-item--link" href="#">О нас</a>
+            <a class="footer__eshop-item--link" href="#">ДОСТАВКА</a>
           </li>
-        </ul>
-        <ul class="footer__media media list-reset">
-          <h2>Медиа</h2>
-          <li class="footer__media-item">
-            <a class="footer__media-item--link" href="#">Блог</a>
-          </li>
-          <li class="footer__media-item">
-            <a class="footer__media-item--link" href="#">Информация для СМИ</a>
-          </li>
-          <li class="footer__media-item">
-            <a class="footer__media-item--link" href="#">Правовая информация</a>
+          <li class="footer__eshop-item">
+            <a class="footer__eshop-item--link" href="#">О НАС</a>
           </li>
         </ul>
 
+        <div class="create-line"></div>
+
+        <ul class="footer__media media list-reset">
+          <p class="footer__eshop-item--title">Медиа</p>
+          <li class="footer__media-item">
+            <a class="footer__media-item--link" href="#">БЛОГ</a>
+          </li>
+          <li class="footer__media-item">
+            <a class="footer__media-item--link" href="#">ИНФОРМАЦИЯ ДЛЯ СМИ</a>
+          </li>
+          <li class="footer__media-item">
+            <a class="footer__media-item--link" href="#">ПРАВОВАЯ ИНФОРМАЦИЯ</a>
+          </li>
+        </ul>
+
+        <div class="create-line"></div>
+
         <ul class="footer__contacts contacts list-reset">
-          <h2>Контакты</h2>
-          <li class="contacts__item-address">
+          <p class="footer__eshop-item--title">Контакты</p>
+          <li class="contacts__item contacts__item-address">
             <svg width="28" height="22" role="img" aria-label="Адрес.">
               <use xlink:href="img/sprite.svg#icon-address-pin"></use>
             </svg>
@@ -711,6 +708,9 @@
           </li>
         </ul>
       </section>
+
+      <div class="create-line"></div>
+
       <div class="footer__copyright">
         <a class=" footer__copyright-link copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">Разработано в HTML Academy</span>
