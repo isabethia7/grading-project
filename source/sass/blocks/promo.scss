@@ -4,7 +4,9 @@
   margin-bottom: 50px;
   background-color: #f3ebe1;
   padding: 30px 12px 30px 12px;
-  height: 640px;
+  @media (min-width: 767px) {
+    height: 640px;
+  }
 }
 
 .promo__container {
@@ -13,11 +15,11 @@
   margin-left: 80px;
   margin-right: 80px;
 
-  align-items: center;
+
   @media (min-width: 767px) {
     display: flex;
     flex-direction: column;
-    margin-left: 150px;
+    margin-left: 80px;
   }
 
 }
@@ -59,6 +61,9 @@
 
 .promo__control-arrow--prev {
   left: 10px;
+    @media (min-width: 767px) {
+    right: 620px;
+  }
 }
 
 .promo__control-arrow--next {
@@ -112,6 +117,17 @@
   font-weight: 700;
   line-height: 48px;
   letter-spacing: 0.72px;
+  @media (min-width: 767px) {
+    color: var(--base-black, #333);
+text-align: center;
+/* Slider Heading Desktop&Tablet */
+font-family: Montserrat;
+font-size: 56px;
+font-style: normal;
+font-weight: 700;
+line-height: 80px; /* 142.857% */
+letter-spacing: 1.12px;
+  }
 }
 
 .promo__container-text {
