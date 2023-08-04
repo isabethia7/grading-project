@@ -1,12 +1,16 @@
 .filter-group {
   text-decoration: none;
   border-color: transparent;
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .filter-list {
   display: flex;
   flex-direction: column;
-  text-align: start;
+  //text-align: start;
 }
 
 .filter-form {
@@ -14,8 +18,14 @@
   flex-direction: column;
   margin: 0px 20px 0px 20px;
   @media (min-width: 767px) {
+    display: flex;
     flex-direction: row;
   }
+  @media (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
 }
 
 .filter-title {

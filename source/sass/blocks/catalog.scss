@@ -9,6 +9,11 @@
     align-items: center;
     justify-content: center;
   }
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+    min-height: 1800px;
+  }
 }
 
 .catalog__pretitle {

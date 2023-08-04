@@ -11,6 +11,12 @@
   @media (min-width: 767px) {
     justify-content: flex-end;
   }
+  @media  (min-width: 1024px) {
+    position: relative;
+    text-align: center;
+    top: 800px;
+    right: 100px;
+  }
 }
 
 .pagination-item {
