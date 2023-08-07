@@ -232,9 +232,10 @@
           <legend class="filter-title">Наличие молока</legend>
           <div class="filter-list">
             <div>
+              <label class="filter-control" for="unimportant">
               <input class="filter-input filter-input-radio" type="radio" name="product-group" value="unimportant" id="unimportant" checked>
-
-              <label class="filter-control" for="unimportant">Неважно</label>
+              Неважно
+            </label>
             </div>
             <div>
               <input class="filter-input filter-input-radio" type="radio" name="product-group" value="dairy" id="dairy">
@@ -322,7 +323,7 @@
                   <svg width="21" height="19" role="img">
                     <use xlink:href="./img/sprite.svg#icon-add-to-cart"></use>
                   </svg>
-                  <span class="cart-text">В корзину</span>
+                  <span class="button-cart cart-text">В корзину</span>
                 </button>
               </div>
             </div>
@@ -604,7 +605,7 @@
 
         <div class="arrow__container container">
           <div class="pagination__item">
-            <button class="pagination__control-arrow pagination__control-arrow--prev" type="button" aria-label="Листать назад.">
+            <button class="pagination__control-arrow pagination__control-arrow--prev" type="button" aria-label="Листать вперед.">
               <svg role="img">
                 <use xlink:href="img/sprite.svg#pagination-arrow-right"></use>
               </svg>

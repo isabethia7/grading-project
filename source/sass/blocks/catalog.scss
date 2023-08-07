@@ -105,6 +105,22 @@
   border-color: transparent;
   background: var(--base-primary, #7859cf);
   color: #ffffff;
+
+  &:hover,
+  &:focus {
+    color: var(--base-white, #fff);
+    background: var(--base-primary, #9070ec);
+  }
+
+  &:active {
+    color: var(--base-white, #fff);
+    background: var(--base-primary, #593cac);
+  }
+
+  &:disabled {
+    color: var(--base-white, #fff);
+    background: var(--base-grey, #bdbdbd);
+  }
 }
 
 .catalog__sorting-container {

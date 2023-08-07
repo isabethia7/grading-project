@@ -11,7 +11,7 @@
   @media (min-width: 767px) {
     justify-content: flex-end;
   }
-  @media  (min-width: 1024px) {
+  @media (min-width: 1024px) {
     position: relative;
     text-align: center;
     top: 800px;
@@ -36,6 +36,21 @@
   line-height: 24px;
   margin-left: 10px;
   padding-top: 7px;
+  &:hover,
+  &:focus {
+    color: var(--base-white, #fff);
+    background: var(--base-primary, #9070ec);
+  }
+
+  &:active {
+    color: var(--base-white, #fff);
+    background: var(--base-primary, #593cac);
+  }
+
+  &:disabled {
+    color: var(--base-white, #fff);
+    background: var(--base-grey, #bdbdbd);
+  }
 }
 
 .pagination-item-2 {
@@ -51,12 +66,14 @@
   width: 40px;
   height: 40px;
   border-color: transparent;
+  border-radius: 4px;
   background-color: #fff;
 
 }
 
-.pagination__control-arrow svg {
-  margin-left: 10px;
-  margin-top: 12px;
 
+.pagination__control-arrow svg {
+  margin-left: -8px;
+  margin-top: -5px;
 }
+
