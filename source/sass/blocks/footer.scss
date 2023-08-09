@@ -6,6 +6,7 @@
   @media (min-width: 1024px) {
     display: grid;
     grid-template-columns: 1fr auto;
+    margin-left: 20px;
   }
 }
 
@@ -18,7 +19,8 @@
     flex-direction: column;
     align-items: flex-start;
     position: relative;
-    top: 60px;
+    top: 80px;
+    margin-left: 100px;
   }
 }
 
@@ -34,18 +36,24 @@
 .footer__social-item {
   text-decoration: none;
   padding-right: 20px;
-  &:hover,
-  &:focus {
-    border-radius: 4px;
-    background: var(--base-secondary, #f0ebff);
+}
+
+.footer__social-item svg {
+  fill: #bdbdbd;
+  &:hover {
+    fill: #7859cf;
   }
 }
 
 .footer__copyright-link {
   text-decoration: none;
   color: #bdbdbd;
-
+  &:hover,
+  &:focus {
+    color: #7859cf;
+  }
 }
+
 .footer__media-item--link {
   text-decoration: none;
   color: #333333;
@@ -73,8 +81,11 @@
   }
   @media (min-width: 1024px) {
     position: relative;
-    left: 200px;
+    left: 400px;
     bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 200px;
   }
 }
 
