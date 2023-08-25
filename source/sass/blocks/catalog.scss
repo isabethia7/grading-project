@@ -40,6 +40,7 @@
     font-weight: 700;
     line-height: 36px; /* 150% */
   }
+
 }
 
 .catalog__title h1 {
@@ -64,6 +65,13 @@
 
 .catalog__title-container {
   margin: 0px 20px 0px 20px;
+  @media (min-width: 1024px) {
+    position: relative;
+    margin: 0px 220px 0px 220px;
+
+    top: -450px;
+    left: 400px;
+  }
 }
 
 .catalog__list {
@@ -128,10 +136,10 @@
   flex-direction: row;
   margin: 40px 0px 20px 110px;
   @media (min-width: 767px) {
-
     margin-right:-340px ;
     gap: 20px;
   }
+
 }
 
 .catalog__sorting-select {

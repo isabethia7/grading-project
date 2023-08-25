@@ -16,18 +16,18 @@
 
   <header class="header">
     <nav class="header__nav nav container">
-      <ul class="nav__list">
-        <div class="nav__list nav__logo-container">
-          <a class="nav__logo" href="./index.html">
-            <picture>
-              <source media="(min-width: 1150px)" srcset="./img/svg/shop-logo-desktop.svg">
-              <source media="(min-width: 767px)" srcset="./img/svg/shop-logo-tablet.svg">
-              <img src="./img/svg/shop-logo-mobile.svg" alt="Логотип Drink2Go.">
-            </picture>
-          </a>
-          <p class="visually-hidden">Интернет-магазин кофейных напитков</p>
-        </div>
-      </ul>
+
+      <div class="nav__logo-container">
+        <a class="nav__logo" href="./index.html">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="./img/svg/shop-logo-desktop.svg">
+            <source media="(min-width: 767px)" srcset="./img/svg/shop-logo-tablet.svg">
+            <img src="./img/svg/shop-logo-mobile.svg" alt="Логотип Drink2Go.">
+          </picture>
+        </a>
+        <p class="visually-hidden">Интернет-магазин кофейных напитков</p>
+      </div>
+
       <ul class="nav__list nav__list--main list-reset">
         <li class="nav__item">
           <a class="nav__link nav__link--current" href="./index.html">ГЛАВНАЯ</a>
@@ -201,12 +201,11 @@
     </section>
 
     <section class="catalog">
-
+      <div class="catalog__title-container">
+        <p class="catalog__pretitle">Каталог</p>
+        <h1 class="catalog__title">Каталог кофейных напитков</h1>
+      </div>
       <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
-        <div class="catalog__title-container">
-          <p class="catalog__pretitle">Каталог</p>
-          <h1 class="catalog__title">Каталог кофейных напитков</h1>
-        </div>
 
         <fieldset class="filter-group filter-group-range">
           <legend class="filter-title">Цена</legend>
@@ -288,7 +287,9 @@
       <section class="catalog__sorting-container">
         <h2 class="catalog__sorting-title">Сортировка:</h2>
         <select class="select catalog__sorting-select">
-          <option value="catalog__sorting-default">по умолчанию</option>
+          <option value="catalog__sorting-default">Сначала дорогое</option>
+          <option value="catalog__sorting-default">Сначала дешевое</option>
+          <option value="catalog__sorting-default">Высокий рейтинг</option>
           <svg width="16" height="16" role="img">
             <use xlink:href="./img/sprite.svg#sort-arrow"></use>
           </svg>
@@ -723,7 +724,7 @@
       </div>
     </div>
   </footer>
-  <!--<script src="./js/script.js" defer></script>-->
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
