@@ -16,7 +16,6 @@
 
   <header class="header">
     <nav class="header__nav nav container">
-
       <div class="nav__logo-container">
         <a class="nav__logo" href="./index.html">
           <picture>
@@ -27,21 +26,6 @@
         </a>
         <p class="visually-hidden">Интернет-магазин кофейных напитков</p>
       </div>
-
-      <ul class="nav__list nav__list--main list-reset">
-        <li class="nav__item">
-          <a class="nav__link nav__link--current" href="./index.html">ГЛАВНАЯ</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">КАТАЛОГ</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">ДОСТАВКА</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">О НАС</a>
-        </li>
-      </ul>
 
       <ul class="nav__list nav__list--user list-reset">
         <li class="nav__item">
@@ -59,16 +43,31 @@
             </svg>
             <span class="visually-hidden">Корзина</span>
           </a>
+        </li>
         <li class="nav__item">
           <button class="nav__toggle" type="button">
             <svg width="16" height="16" role="img">
               <use xlink:href="./img/sprite.svg#icon-menu"></use>
             </svg>
           </button>
-        </li>
+          <ul class="nav__dropdown">
+            <li class="nav__dropdown-item">
+              <a href="#">ГЛАВНАЯ</a>
+            </li>
+            <li class="nav__dropdown-item">
+              <a href="#">КАТАЛОГ</a>
+            </li>
+            <li class="nav__dropdown-item">
+              <a href="#">ДОСТАВКА</a>
+            </li>
+            <li class="nav__dropdown-item">
+              <a href="#">О НАС</a>
+            </li>
+          </ul>
         </li>
       </ul>
     </nav>
+
   </header>
 
   <main>
@@ -256,23 +255,28 @@
           <div class="filter-list">
             <div>
               <input class="filter-input filter-input-check" type="checkbox" name="Brazil" id="Brazil" checked>
-              <label class="filter-control" for="Brazil">Бразилия</label>
+              <label class="filter-control-check" for="Brazil"></label>
+              <span class="filter-label">Бразилия</span>
             </div>
             <div>
               <input class="filter-input filter-input-check" type="checkbox" name="Efiopiya" id="Efiopiya">
-              <label class="filter-control" for="Efiopiya">Эфиопия</label>
+              <label class="filter-control-check" for="Efiopiya"></label>
+              <span class="filter-label">Эфиопия</span>
             </div>
             <div>
               <input class="filter-input filter-input-check" type="checkbox" name="Columbia" id="Columbia">
-              <label class="filter-control" for="Columbia">Колумбия</label>
+              <label class="filter-control-check" for="Columbia"></label>
+              <span class="filter-label">Колумбия</span>
             </div>
             <div>
               <input class="filter-input filter-input-check" type="checkbox" name="Costa-rica" id="Costa-rica">
-              <label class="filter-control" for="Costa-rica">Коста-Рика</label>
+              <label class="filter-control-check" for="Costa-rica"></label>
+              <span class="filter-label">Коста-Рика</span>
             </div>
             <div>
               <input class="filter-input filter-input-check" type="checkbox" name="Peru" id="Peru">
-              <label class="filter-control" for="Peru">Перу</label>
+              <label class="filter-control-check" for="Peru"></label>
+              <span class="filter-label">Перу</span>
             </div>
           </div>
         </fieldset>
@@ -724,7 +728,7 @@
       </div>
     </div>
   </footer>
-  <script src="./js/script.js"></script>
+  <script src="./js/Script.js"></script>
 </body>
 
 </html>
