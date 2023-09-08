@@ -1,7 +1,14 @@
-const navToggle = document.querySelector('.nav__toggle');
-const navDropdown = document.querySelector('.nav__dropdown');
+if (document.querySelector('.no-js')) {
+  document.querySelector('.no-js').classList.remove('no-js');
+}
 
-navToggle.addEventListener('click', () => {
-  navDropdown.classList.toggle('show');
-});
+const menuBtn = document.querySelector('.nav__toggle');
+const menuNav = document.querySelector('.nav');
+
+if (menuBtn) {
+  menuBtn.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    menuNav.classList.toggle('nav--opened');
+  });
+}
 

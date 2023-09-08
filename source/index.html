@@ -14,8 +14,67 @@
 
 <body class="page__body no-js">
 
-  <header class="header">
+  <header class="header header--home">
+
     <nav class="header__nav nav container">
+      <button class="nav__toggle" type="button">
+        <svg width="16" height="16" role="img">
+          <use xlink:href="./img/sprite.svg#icon-menu"></use>
+        </svg>
+        <span class="visually-hidden">Открыть меню.</span>
+      </button>
+
+      <div class="nav__logo-container">
+        <a class="nav__logo" href="./index.html">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="./img/svg/shop-logo-desktop.svg">
+            <source media="(min-width: 767px)" srcset="./img/svg/shop-logo-tablet.svg">
+            <img src="./img/svg/shop-logo-mobile.svg" alt="Логотип Drink2Go.">
+          </picture>
+        </a>
+        <p class="visually-hidden">Интернет-магазин кофейных напитков</p>
+      </div>
+
+      <ul class="nav__list nav__list--user list-reset">
+        <li class="nav__item">
+          <a class="nav__link nav__link--icon nav__link--login" href="#" aria-label="Личный кабинет.">
+            <svg width="16" height="16" role="img">
+              <use xlink:href="./img/sprite.svg#icon-login"></use>
+            </svg>
+            <span class="visually-hidden">Войти</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link nav__link--icon nav__link--cart" href="#" aria-label="Корзина.">
+            <svg width="16" height="16" role="img">
+              <use xlink:href="./img/sprite.svg#icon-cart"></use>
+            </svg>
+            <span class="visually-hidden">Корзина</span>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="nav__list nav__list--main list-reset">
+        <li class="nav__item">
+          <a class="nav__link" href="#">ГЛАВНАЯ</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">КАТАЛОГ</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">ДОСТАВКА</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">О НАС</a>
+        </li>
+      </ul>
+    </nav>
+    <!--
+    <nav class="header__nav nav container">
+      <button class="nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню.</span>
+      </button>
+
       <div class="nav__logo-container">
         <a class="nav__logo" href="./index.html">
           <picture>
@@ -67,6 +126,7 @@
         </li>
       </ul>
     </nav>
+  -->
 
   </header>
 
