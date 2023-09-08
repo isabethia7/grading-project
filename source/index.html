@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 </head>
 
@@ -134,8 +136,89 @@
 
     <section class="promo">
 
-      <button class="promo__control-arrow promo__control-arrow--prev" type="button" aria-label="Листать назад.">
+      <div class="promo__container">
+        <span id="slide-1">
+          <div class="promo__title-container">
+            <p class="promo__type">Новинка!</p>
+            <h1 class="promo__title title">Декаф Флэт Уайт</h1>
+            <p class="promo__text">Свежесваренный кофе без кофеина из Эфиопии
+              с натуральным фермерским молоком — то, что нужно
+              для расслабления после тяжёлого рабочего дня</p>
+          </div>
+          <div class="promo__price-container">
+            <p class="promo__price-old">295</p>
+            <p class="promo__price-discount">225 ₽</p>
+            <button class="button promo__button modal-open" href="#">Заказать</button>
+          </div>
+        </span>
+        <span id="slide-2">
+          <div class="promo__title-container">
+            <h1 class="promo__title">Лавандовый Латте</h1>
+            <p class="promo__type">Новинка!</p>
+            <p class="promo__text">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+          </div>
+          <div class="promo__price-container">
+            <p class="promo__price-old">295</p>
+            <p class="promo__price-discount">265 ₽</p>
+          </div>
+          <button class="button promo__button modal-open" href="#">Заказать</button>
 
+        </span>
+        <span id="slide-3">
+          <div class="promo__title-container">
+            <h1 class="promo__title title">Тройной Эспрессо</h1>
+            <p class="promo__type">Новинка!</p>
+          </div>
+          <p class="promo__text">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+
+          <div class="promo__price-container">
+            <p class="promo__price-old">395</p>
+            <p class="promo__price-discount">375 ₽</p>
+          </div>
+         <button class="button promo__button modal-open" href="#">Заказать</button>
+
+        </span>
+        <div class="image-container">
+          <picture class=" promo__item-img">
+            <source media="(min-width: 1150px)" srcset="./img/header-coffee-desktop-cream.webp 1x, ./img/header-coffee-desktop-cream@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 1150px)" srcset="./img/header-coffee-desktop-cream.png 1x, ./img/header-coffee-desktop-cream@2x.png 2x">
+
+            <source media="(min-width: 767px)" srcset="./img/header-coffee-tablet-cream.webp 1x, ./img/header-coffee-tablet-cream@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 767px)" srcset="./img/header-coffee-tablet-cream.png 1x, ./img/header-coffee-tablet-cream@2x.png 2x">
+
+            <source srcset="./img/header-coffee-mobile-cream.webp 1x, ./img/header-coffee-mobile-cream@2x.webp 2x" type="image/webp">
+            <img src="./img/header-coffee-mobile-cream.png" srcset="./img/header-coffee-mobile-cream@2x.png" alt="Декаф Флэт Уайт.">
+          </picture>
+          <picture class="promo__item-img">
+            <source media="(min-width: 1150px)" srcset="./img/header-coffee-desktop-lavender.webp 1x, ./img/header-coffee-desktop-lavender@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 1150px)" srcset="./img/header-coffee-desktop-lavender.png 1x, ./img/header-coffee-desktop-lavender@2x.png 2x">
+
+            <source media="(min-width: 767px)" srcset="./img/header-coffee-tablet-lavender.webp 1x, ./img/header-coffee-tablet-lavender@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 767px)" srcset="./img/header-coffee-tablet-lavender.png 1x, ./img/header-coffee-tablet-lavender@2x.png 2x">
+
+            <source srcset="./img/header-coffee-mobile-lavender.webp 1x, ./img/header-coffee-mobile-lavender@2x.webp 2x" type="image/webp">
+            <img src="./img/header-coffee-mobile-lavender.png" srcset="./img/header-coffee-mobile-lavender@2x.png" alt="Декаф Флэт Уайт.">
+          </picture>
+          <picture class="promo__item">
+            <source media="(min-width: 1150px)" srcset="./img/header-coffee-desktop-espresso.webp 1x, ./img/header-coffee-desktop-espresso@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 1150px)" srcset="./img/header-coffee-desktop-espresso.png 1x, ./img/header-coffee-desktop-espresso@2x.png 2x">
+
+            <source media="(min-width: 767px)" srcset="./img/header-coffee-tablet-espresso.webp 1x, ./img/header-coffee-tablet-espresso@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 767px)" srcset="./img/header-coffee-tablet-espresso.png 1x, ./img/header-coffee-tablet-espresso@2x.png 2x">
+
+            <source srcset="./img/header-coffee-mobile-espresso.webp 1x, ./img/header-coffee-mobile-espresso.webp 2x" type="image/webp">
+            <img src="./img/header-coffee-mobile-espresso.png" srcset="./img/header-coffee-mobile-espresso@2x.png" alt="Декаф Флэт Уайт.">
+          </picture>
+        </div>
+        <div class="buttons">
+          <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+          <a href="#slide-3"></a>
+        </div>
+      </div>
+
+      <!--
+      <button class="promo__control-arrow promo__control-arrow--prev" type="button" aria-label="Листать назад.">
         <svg width="50" height="26" role="img">
           <use xlink:href="img/sprite.svg#arrow-left"></use>
         </svg>
@@ -221,13 +304,13 @@
       </div>
 
       <button class="promo__control-arrow promo__control-arrow--next" type="button" aria-label="Листать дальше.">
-
         <svg width="50" height="26" role="img">
           <use xlink:href="img/sprite.svg#arrow-right"></use>
         </svg>
       </button>
-
+    -->
     </section>
+
     <section class="benefits">
       <div class="benefits__container container">
         <div class="benefits__container-text">

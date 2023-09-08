@@ -118,14 +118,9 @@
 }
 
 .promo__title {
-  //display: flex;
-  //flex-direction: column;
-  //flex: 1 0 0;
 
   color: var(--base-black, #333);
   text-align: center;
-
-  /* Slider Heading Mobile */
   font-size: 36px;
   font-family: Montserrat;
   font-weight: 700;
@@ -134,12 +129,12 @@
   @media (min-width: 767px) {
     color: var(--base-black, #333);
     text-align: center;
-    /* Slider Heading Desktop&Tablet */
+
     font-family: Montserrat;
     font-size: 56px;
     font-style: normal;
     font-weight: 700;
-    line-height: 80px; /* 142.857% */
+    line-height: 80px; 
     letter-spacing: 1.12px;
   }
 }
