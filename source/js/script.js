@@ -1,6 +1,6 @@
-if (document.querySelector('.no-js')) {
-  document.querySelector('.no-js').classList.remove('no-js');
-}
+//if (document.querySelector('.no-js')) {
+//  document.querySelector('.no-js').classList.remove('no-js');
+//}
 
 const menuBtn = document.querySelector('.nav__toggle');
 const menuNav = document.querySelector('.nav');
