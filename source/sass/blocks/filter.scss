@@ -1,3 +1,5 @@
+
+/*
 .filter-group {
   text-decoration: none;
   border-color: transparent;
@@ -30,12 +32,12 @@
 
 .filter-title {
   color: var(--base-black, #333);
-  /* Label */
+
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
   margin: 10px 0px 10px 0px;
 }
 
@@ -196,10 +198,11 @@ input[type="radio"]:checked::before {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
   margin-right: 20px;
   &:hover,
   &:focus {
     border: 2px solid var(--alt-primary-lighter, #593cac);
   }
 }
+*/

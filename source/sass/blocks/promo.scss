@@ -1,15 +1,18 @@
+/*
 .promo {
   position: relative;
   text-align: center;
   margin-bottom: 50px;
   background-color: #f3ebe1;
-  //padding: 30px 12px 30px 12px;
+  padding: 30px 12px 30px 12px;
+  width: 100%;
+  margin: 0 auto;
   @media (min-width: 767px) {
     height: 640px;
-    //margin-bottom: 200px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 200px;
   }
-
-
 }
 
 .promo__container {
@@ -32,7 +35,6 @@
 .promo__type {
   color: var(--base-primary, #7859cf);
   text-align: center;
-  /* Badge */
   font-size: 12px;
   font-family: Montserrat;
   font-weight: 700;
@@ -40,6 +42,7 @@
   letter-spacing: 0.48px;
   text-transform: uppercase;
 }
+
 
 .promo__item-img img {
   @media (min-width: 767px) {
@@ -53,7 +56,6 @@
     margin-right: 300px;
     top: -250px;
   }
-
 }
 
 .promo__item-img--lavender {
@@ -118,7 +120,6 @@
 }
 
 .promo__title {
-
   color: var(--base-black, #333);
   text-align: center;
   font-size: 36px;
@@ -134,7 +135,7 @@
     font-size: 56px;
     font-style: normal;
     font-weight: 700;
-    line-height: 80px; 
+    line-height: 80px;
     letter-spacing: 1.12px;
   }
 }
@@ -173,14 +174,13 @@
     text-align: center;
     width: 600px;
     margin: 0px 100px 0px 100px;
-    /* Slider Description Desktop&Tablet */
+
     font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 32px; /* 160% */
+    line-height: 32px; 
     //padding: 50px 50px 50px 50px;
   }
-
 }
-
+*/
