@@ -3,7 +3,7 @@
 .filter-group {
   text-decoration: none;
   border-color: transparent;
-  @media (min-width: 1024px) {
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
     margin-right: 100px;
@@ -24,7 +24,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-  @media (min-width: 1024px) {
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
   }
