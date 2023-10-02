@@ -16,6 +16,7 @@
   @media (min-width: $desktop-width) {
     justify-content: space-between;
     height: 714px;
+    //margin-right: -100px;
   }
 }
 
@@ -57,8 +58,15 @@
 .promo__control-arrow {
   background-color: transparent;
   border-color: transparent;
-
+  position: relative;
+  //left: 200px;
+  //margin-right: -35px;
 }
+
+//.promo__control-arrow--next {
+  //position: relative;
+  //left: 40px; /*вызывает пробел всей страницы справа*/
+//}
 
 
 .promo__price-container {
@@ -140,6 +148,5 @@
     position: relative;
     color: var(--base-black, #333);
     left: 250px;
-
   }
 }

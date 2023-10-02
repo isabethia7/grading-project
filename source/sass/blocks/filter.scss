@@ -1,19 +1,13 @@
 
-/*
+
 .filter-group {
   text-decoration: none;
   border-color: transparent;
-  @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: column;
-    margin-right: 100px;
-  }
 }
 
 .filter-list {
   display: flex;
   flex-direction: column;
-
 }
 
 .filter-form {
@@ -42,13 +36,7 @@
 }
 
 .filter-button {
-  flex-direction: column;
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  width: 100px;
   margin-top: 20px;
-
 }
 
 .filter-label {
@@ -121,7 +109,7 @@ input[type="radio"]:checked::before {
 .filter-input-check:checked + .filter-control-check:before {
   transform: translateX(20px);
 }
-
+/*
 .range-slider {
   height: 4px;
   position: relative;
