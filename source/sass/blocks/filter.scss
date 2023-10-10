@@ -3,6 +3,7 @@
 .filter-group {
   text-decoration: none;
   border-color: transparent;
+  justify-content: flex-start;
 }
 
 .filter-list {
@@ -13,7 +14,8 @@
 .filter-form {
   display: flex;
   flex-direction: column;
-  margin: 0px 20px 0px 20px;
+  //margin: 0px 20px 0px 20px;
+  //text-align: center;
   @media (min-width: 767px) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

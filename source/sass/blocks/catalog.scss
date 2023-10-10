@@ -1,8 +1,7 @@
 .catalog {
   background: #f8f8f8;
-  padding-top: 50px;
-  padding-left: 20px;
-  
+padding: 50px;
+
 }
 
 .catalog__pretitle {
@@ -39,7 +38,6 @@
     color: #333;
     text-align: center;
 
-
     font-family: Montserrat;
     font-size: 42px;
     font-style: normal;
@@ -47,7 +45,6 @@
     line-height: 64px;
   }
 }
-
 
 .catalog__list {
   display: flex;
@@ -65,7 +62,6 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-
 
 .catalog__list-container {
   text-decoration: none;
@@ -111,7 +107,14 @@
 .catalog__sorting-container {
   display: flex;
   flex-direction: row;
-  margin: 40px 0px 20px 110px;
+  text-align: center;
+
+  @media (min-width: 767px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 40px 20px 20px 110px;
+  }
 }
 
 .catalog__sorting-select {
@@ -147,14 +150,11 @@
   }
 }
 
-
-
 .catalog__price-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
 
 .catalog__price {
   color: var(--base-black, #333);
@@ -163,4 +163,3 @@
   font-weight: 600;
   line-height: 32px;
 }
-
