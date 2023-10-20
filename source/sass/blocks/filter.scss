@@ -1,9 +1,14 @@
-
-
 .filter-group {
   text-decoration: none;
   border-color: transparent;
   justify-content: flex-start;
+  width: 280px;
+  @media (min-width: 767px) {
+    width: 223px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 318px;
+  }
 }
 
 .filter-list {
@@ -14,16 +19,12 @@
 .filter-form {
   display: flex;
   flex-direction: column;
-  //margin: 0px 20px 0px 20px;
-  //text-align: center;
+
   @media (min-width: 767px) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-  @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: column;
-  }
+
 }
 
 .filter-title {
@@ -38,7 +39,16 @@
 }
 
 .filter-button {
-  margin-top: 20px;
+  @media (min-width: 767px) {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 137px;
+  }
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .filter-label {
@@ -74,8 +84,6 @@ input[type="radio"]:checked::before {
   transform: translate(-50%, -50%);
 }
 
-
-
 .filter-input-check {
   display: none;
 }
@@ -91,13 +99,12 @@ input[type="radio"]:checked::before {
   transition: background-color 0.3s ease;
 }
 
-
 .filter-control-check:before {
   content: "";
   position: absolute;
   top: 2px;
   left: 2px;
- width: 16px;
+  width: 16px;
   height: 16px;
   background-color: white;
   border-radius: 50%;
@@ -111,13 +118,14 @@ input[type="radio"]:checked::before {
 .filter-input-check:checked + .filter-control-check:before {
   transform: translateX(20px);
 }
-/*
+
 .range-slider {
   height: 4px;
   position: relative;
   background-color: #e1e9f6;
   border-radius: 2px;
 }
+
 .range-selected {
   height: 100%;
   left: 30%;
@@ -195,4 +203,3 @@ input[type="radio"]:checked::before {
     border: 2px solid var(--alt-primary-lighter, #593cac);
   }
 }
-*/

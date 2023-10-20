@@ -283,27 +283,25 @@
             </div>
           </div>
         </fieldset>
-
-        <div class="filter-button">
-          <button class="button button-apply filter-submit" type="submit">Применить</button>
-          <button class="button button-transparent filter-reset" type="reset">Сбросить</button>
-        </div>
-
       </form>
 
-      <section class="catalog__sorting-container">
-        <h2 class="catalog__sorting-title">Сортировка:</h2>
-        <select class="select catalog__sorting-select">
-          <option value="catalog__sorting-default">Сначала дорогое</option>
-          <option value="catalog__sorting-default">Сначала дешевое</option>
-          <option value="catalog__sorting-default">Высокий рейтинг</option>
-          <svg width="16" height="16" role="img">
-            <use xlink:href="./img/sprite.svg#sort-arrow"></use>
-          </svg>
-        </select>
-      </section>
+      <div class="filter-button">
+        <button class="button button-apply filter-submit" type="submit">Применить</button>
+        <button class="button button-transparent filter-reset" type="reset">Сбросить</button>
+      </div>
 
       <div class="catalog__container container">
+        <section class="catalog__sorting-container">
+          <h2 class="catalog__sorting-title">Сортировка:</h2>
+          <select class="select catalog__sorting-select">
+            <option value="catalog__sorting-default">Сначала дорогое</option>
+            <option value="catalog__sorting-default">Сначала дешевое</option>
+            <option value="catalog__sorting-default">Высокий рейтинг</option>
+            <svg width="16" height="16" role="img">
+              <use xlink:href="./img/sprite.svg#sort-arrow"></use>
+            </svg>
+          </select>
+        </section>
         <ul class="catalog__list list-reset">
           <li class="catalog__item">
             <a class="catalog__image" href="#">
@@ -593,14 +591,13 @@
       </div>
       <section class="pagination-container list-reset">
 
-
-          <div class="pagination__item">
-            <button class="pagination__control-arrow pagination__control-arrow--prev" type="button" aria-label="Листать назад.">
-              <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.80847 -5.20835e-08L6 1.23899L2.38306 5L6 8.76101L4.80847 10L-2.18557e-07 5L4.80847 -5.20835e-08Z" fill="#7859CF" />
-              </svg>
-            </button>
-          </div>
+        <div class="pagination__item">
+          <button class="pagination__control-arrow pagination__control-arrow--prev" type="button" aria-label="Листать назад.">
+            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M4.80847 -5.20835e-08L6 1.23899L2.38306 5L6 8.76101L4.80847 10L-2.18557e-07 5L4.80847 -5.20835e-08Z" fill="#7859CF" />
+            </svg>
+          </button>
+        </div>
 
         <button class="pagination-item pagination-item-numbers">
           <span class="pagination-item-1">1</span>
@@ -612,23 +609,23 @@
           <span class="pagination-item-3">3</span>
         </button>
 
-          <div class="pagination__item">
-            <button class="pagination__control-arrow pagination__control-arrow--next" type="button" aria-label="Листать вперед.">
-              <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.19153 -5.20835e-08L5.41581e-08 1.23899L3.61694 5L3.82956e-07 8.76101L1.19153 10L6 5L1.19153 -5.20835e-08Z" fill="#7859CF" />
-              </svg>
-            </button>
-          </div>
+        <div class="pagination__item">
+          <button class="pagination__control-arrow pagination__control-arrow--next" type="button" aria-label="Листать вперед.">
+            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1.19153 -5.20835e-08L5.41581e-08 1.23899L3.61694 5L3.82956e-07 8.76101L1.19153 10L6 5L1.19153 -5.20835e-08Z" fill="#7859CF" />
+            </svg>
+          </button>
+        </div>
 
       </section>
     </section>
-
+    <!--
     <div class="map-scheme">
       <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab18278131853beab38c1fbbe6f6b620ad14f4ebdd4bfbb67db7d7dc4b618a799&amp;source=constructor" width="100%" height="410" frameborder="0"></iframe>
     </div>
-
+  -->
   </main>
-
+  <!--
   <footer class="footer">
 
     <div class="footer__wrapper-container">
@@ -728,7 +725,7 @@
       </div>
     </div>
   </footer>
-
+-->
   <script src="./js/Script.js"></script>
 
 </body>

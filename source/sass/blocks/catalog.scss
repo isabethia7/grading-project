@@ -1,6 +1,6 @@
 .catalog {
   background: #f8f8f8;
-padding: 50px;
+  padding: 80px 20px 90px 20px;
 
 }
 
@@ -50,16 +50,19 @@ padding: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  //padding: 50px;
   gap: 20px;
   @media (min-width: 767px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    //margin-left: 50px;
-    //margin-right: 50px;
+    //padding: 200px;
+    gap: 20px;
   }
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    //padding: 340px;
+
   }
 }
 
@@ -107,7 +110,7 @@ padding: 50px;
 .catalog__sorting-container {
   display: flex;
   flex-direction: row;
-  text-align: center;
+  margin-left: 50px;
 
   @media (min-width: 767px) {
     display: flex;
@@ -138,15 +141,18 @@ padding: 50px;
   display: flex;
   flex-direction: column;
   width: 280px;
-  height: 450px;
-
   background-image: url("../../img/card-background.png");
   align-items: center;
   padding: 40px 20px 20px 20px;
+
   @media (min-width: 767px) {
     width: 349px;
     height: 440px;
-    padding: 20px 20px 0px 20px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 317px;
+    height: 460px;
+
   }
 }
 
