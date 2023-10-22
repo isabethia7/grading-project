@@ -67,8 +67,6 @@
 
     .nav__text {
       display: inline-flex;
-      //text-decoration: none;
-      //color: #333333;
     }
   }
 }
@@ -90,3 +88,6 @@
 
 
 
+.nav__item-hide {
+  display: none;
+}
