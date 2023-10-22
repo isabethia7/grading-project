@@ -1,13 +1,10 @@
-
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
 
 .nav__list--main {
-
   .nav__item {
     display: none;
     @media (min-width: 767px) {
@@ -72,7 +69,7 @@
 }
 
 .nav__toggle {
-  display: inline-flex;
+  display: block;
   padding: 22px;
   align-items: flex-start;
   gap: 10px;
@@ -86,8 +83,11 @@
   }
 }
 
-
-
-.nav__item-hide {
+.nav__menu-dropdown {
   display: none;
+  list-style: none;
+}
+
+.nav__menu-dropdown--opened {
+  display: block;
 }
