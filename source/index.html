@@ -47,7 +47,7 @@
 
       <ul class="nav__list nav__list--user list-reset">
         <li class="nav__item">
-          <a class="nav__link nav__link--icon nav__link--login" href="#" aria-label="Личный кабинет.">
+          <a class="nav__link--icon nav__link--login" href="#" aria-label="Личный кабинет.">
             <svg width="16" height="16" role="img" alt="Войти">
               <use xlink:href="./img/sprite.svg#icon-login"></use>
             </svg>
@@ -56,32 +56,35 @@
           </a>
         </li>
         <li class="nav__item">
-          <a class="nav__link nav__link--icon nav__link--cart" href="#" aria-label="Корзина.">
+          <a class="nav__link--icon nav__link--cart" href="#" aria-label="Корзина.">
             <svg width="16" height="16" role="img" alt="Корзина">
               <use xlink:href="./img/sprite.svg#icon-cart"></use>
             </svg>
-
             <span class="nav__text">Корзина</span>
           </a>
         </li>
-          <button class="nav__toggle" type="button">
-            <svg width="16" height="12" role="img" alt="Открыть меню.">
-              <use xlink:href="./img/sprite.svg#icon-menu"></use>
-            </svg>
-          </button>
-          <li class="nav__menu-dropdown">
-            <span class="nav__item-dropdown">
-              <a class="nav__link" href="#">ГЛАВНАЯ</a>
-            </span>
-            <span class="nav__item-dropdown">
-              <a class="nav__link" href="#">КАТАЛОГ</a>
-            </span>
-            <span class="nav__item-dropdown">
-              <a class="nav__link" href="#">ДОСТАВКА</a>
-            </span>
-            <span class="nav__item-dropdown">
-              <a class="nav__link" href="#">О НАС</a>
-            </span>
+        <button class="nav__toggle" type="button">
+          <img src="./img/svg/icon-menu.svg" alt="Открыть меню." width="16" height="12">
+        </button>
+
+        <li class="nav__menu-dropdown">
+
+          <span class="nav__item-dropdown">
+            <a class="nav__link" href="#">ГЛАВНАЯ</a>
+          </span>
+          <div class="create-dropdown-line"></div>
+          <span class="nav__item-dropdown">
+            <a class="nav__link" href="#">КАТАЛОГ</a>
+          </span>
+          <div class="create-dropdown-line"></div>
+          <span class="nav__item-dropdown">
+            <a class="nav__link" href="#">ДОСТАВКА</a>
+          </span>
+          <div class="create-dropdown-line"></div>
+          <span class="nav__item-dropdown">
+            <a class="nav__link" href="#">О НАС</a>
+          </span>
+
         </li>
       </ul>
     </nav>
