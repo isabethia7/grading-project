@@ -593,14 +593,13 @@
       </div>
       <section class="pagination-container list-reset">
 
-
-          <div class="pagination__item">
-            <button class="pagination__control-arrow pagination__control-arrow--prev" type="button" aria-label="Листать назад.">
-              <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.80847 -5.20835e-08L6 1.23899L2.38306 5L6 8.76101L4.80847 10L-2.18557e-07 5L4.80847 -5.20835e-08Z" fill="#7859CF" />
-              </svg>
-            </button>
-          </div>
+        <div class="pagination__item">
+          <button class="pagination__control-arrow pagination__control-arrow--prev" type="button" aria-label="Листать назад.">
+            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M4.80847 -5.20835e-08L6 1.23899L2.38306 5L6 8.76101L4.80847 10L-2.18557e-07 5L4.80847 -5.20835e-08Z" fill="#7859CF" />
+            </svg>
+          </button>
+        </div>
 
         <button class="pagination-item pagination-item-numbers">
           <span class="pagination-item-1">1</span>
@@ -612,13 +611,13 @@
           <span class="pagination-item-3">3</span>
         </button>
 
-          <div class="pagination__item">
-            <button class="pagination__control-arrow pagination__control-arrow--next" type="button" aria-label="Листать вперед.">
-              <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.19153 -5.20835e-08L5.41581e-08 1.23899L3.61694 5L3.82956e-07 8.76101L1.19153 10L6 5L1.19153 -5.20835e-08Z" fill="#7859CF" />
-              </svg>
-            </button>
-          </div>
+        <div class="pagination__item">
+          <button class="pagination__control-arrow pagination__control-arrow--next" type="button" aria-label="Листать вперед.">
+            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1.19153 -5.20835e-08L5.41581e-08 1.23899L3.61694 5L3.82956e-07 8.76101L1.19153 10L6 5L1.19153 -5.20835e-08Z" fill="#7859CF" />
+            </svg>
+          </button>
+        </div>
 
       </section>
     </section>
@@ -635,10 +634,16 @@
       <ul class="footer__social social list-reset">
         <li class="footer__reset-item">
           <a href="./index.html">
-            <img src="./img/svg/shop-logo-desktop.svg" alt="Переход на главную страницу.">
+            <a class="nav__logo" href="./index.html">
+              <picture>
+                <source media="(min-width: 1024px)" srcset="./img/svg/shop-logo-desktop.svg">
+                <source media="(min-width: 767px)" srcset="./img/svg/shop-logo-tablet.svg">
+                <img src="./img/svg/shop-logo-tablet.svg" alt="Логотип Drink2Go.">
+              </picture>
+            </a>
             <span class="visually-hidden">Интернет-магазин кофейных напитков</span>
           </a>
-          <span class="visually-hidden">Переход на главную страницу</span>
+
         </li>
         <div class="footer__social-list">
           <li class="footer__social-item">
