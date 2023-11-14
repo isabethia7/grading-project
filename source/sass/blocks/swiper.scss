@@ -694,10 +694,11 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-slide {
-  width: auto;
-  flex-shrink: 0;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  height: 656px;
+  padding-top: 20px;
 }
 
 .swiper-slide img {
@@ -706,13 +707,15 @@ button.swiper-pagination-bullet {
   align-items: center;
   justify-content: center;
   width: 280px;
+
   @media (min-width: 767px) {
     width: 476px;
+    position: relative;
+    top: 350px;
   }
   @media (min-width: $desktop-width) {
     width: 600px;
   }
-
 }
 
 .swiper-container {
