@@ -91,17 +91,35 @@
   </header>
 
   <main>
+    <div class="swiper-container">
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide swiper-slide-cream">
+          <img src="./img/header-coffee-mobile-cream@2x.webp" alt="Slide 1" />
+
+        </div>
+        <div class="swiper-slide swiper-slide-espresso">
+          <img src="./img/header-coffee-mobile-espresso@2x.webp" alt="Slide 2" />
+
+        </div>
+        <div class="swiper-slide swiper-slide-lavender">
+          <img src="./img/header-coffee-mobile-lavender@2x.webp" alt="Slide 3" />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+    </div>
 
     <!-- <section class="promo">
-    <div class="promo__container swiper-container">
-      <button class="promo__control-arrow promo__control-arrow--prev swiper-button-prev" type="button" aria-label="Листать назад.">
+      <button class="promo__control-arrow promo__control-arrow--prev" type="button" aria-label="Листать назад.">
         <svg width="50" height="26" role="img">
           <use xlink:href="img/sprite.svg#arrow-left"></use>
         </svg>
       </button>
+      <div class="promo__container">
 
-        <ol class="promo__list swiper-wrapper list-reset">
-          <li class=" promo__item promo__item-img promo__item-img--cream swiper-slide">
+        <ol class="promo__list  list-reset">
+          <li class=" promo__item promo__item-img promo__item-img--cream">
             <picture class="promo__item-img">
               <source media="(min-width: 1024px)" srcset="./img/header-coffee-desktop-cream.webp 1x, ./img/header-coffee-desktop-cream@2x.webp 2x" type="image/webp">
               <source media="(min-width: 1024px)" srcset="./img/header-coffee-desktop-cream.png 1x, ./img/header-coffee-desktop-cream@2x.png 2x">
@@ -128,8 +146,7 @@
             </section>
           </li>
 
-
-          <li class=" promo__item promo__item-img promo__item-img--lavender swiper-slide">
+          <li class=" promo__item promo__item-img promo__item-img--lavender">
             <picture class="promo__item-img">
               <source media="(min-width: 1024px)" srcset="./img/header-coffee-desktop-lavender.webp 1x, ./img/header-coffee-desktop-lavender@2x.webp 2x" type="image/webp">
               <source media="(min-width: 1024px)" srcset="./img/header-coffee-desktop-lavender.png 1x, ./img/header-coffee-desktop-lavender@2x.png 2x">
@@ -143,7 +160,6 @@
             <div class="promo__title-container">
               <p class="promo__type">Новинка!</p>
               <h1 class="promo__title">Лавандовый Латте</h1>
-
               <p class="promo__text">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
             </div>
             <div class="promo__price-container">
@@ -153,7 +169,7 @@
               <button class="button promo__button modal-open" href="#">Заказать</button>
             </div>
           </li>
-          <li class=" promo__item promo__item-img promo__item-img--espresso swiper-slide">
+          <li class=" promo__item promo__item-img promo__item-img--espresso">
             <picture class="promo__item">
               <source media="(min-width: 1024px)" srcset="./img/header-coffee-desktop-espresso.webp 1x, ./img/header-coffee-desktop-espresso@2x.webp 2x" type="image/webp">
               <source media="(min-width: 1024px)" srcset="./img/header-coffee-desktop-espresso.png 1x, ./img/header-coffee-desktop-espresso@2x.png 2x">
@@ -178,13 +194,12 @@
             </div>
           </li>
         </ol>
-
-      <button class="promo__control-arrow promo__control-arrow--next swiper-button-prev" type="button" aria-label="Листать дальше.">
+      </div>
+      <button class="promo__control-arrow promo__control-arrow--next" type="button" aria-label="Листать дальше.">
         <svg width="50" height="26" role="img">
           <use xlink:href="img/sprite.svg#arrow-right"></use>
         </svg>
       </button>
-      </div>
     </section> -->
 
     <section class="benefits">
@@ -750,8 +765,9 @@
   </footer>
 
   <script src="./js/Script.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/Swiper.js"></script>
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
 
 </body>
 
