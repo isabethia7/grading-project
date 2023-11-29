@@ -697,8 +697,11 @@ button.swiper-pagination-bullet {
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 656px;
   padding-top: 20px;
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .swiper-slide img {
@@ -715,6 +718,10 @@ button.swiper-pagination-bullet {
   }
   @media (min-width: $desktop-width) {
     width: 600px;
+    position: inherit;
+    top: -40px;
+    margin-left: 100px;
+    margin-right: 0px;
   }
 }
 
@@ -728,9 +735,9 @@ button.swiper-pagination-bullet {
   @media (min-width: 767px) {
     height: 828px;
   }
-  @media (min-width: $desktop-width) {
-    height: 714px;
-  }
+  // @media (min-width: $desktop-width) {
+  //   height: 714px;
+  // }
 }
 
 .swiper-slide-cream {
