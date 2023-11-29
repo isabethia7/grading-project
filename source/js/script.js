@@ -12,3 +12,7 @@ navToggle.addEventListener('click', () => {
     img.src = openImgSrc;
   }
 });
+
+
+
+
