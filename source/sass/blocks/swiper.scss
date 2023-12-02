@@ -253,6 +253,9 @@
   align-items: center;
   justify-content: center;
   color: var(--swiper-navigation-color, var(--swiper-theme-color));
+  @media (min-width: 767px) {
+    margin-top: 100px;
+  }
 }
 .swiper-button-next.swiper-button-disabled,
 .swiper-button-prev.swiper-button-disabled {
@@ -701,6 +704,7 @@ button.swiper-pagination-bullet {
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-left: 80px;
   }
 }
 
@@ -714,14 +718,12 @@ button.swiper-pagination-bullet {
   @media (min-width: 767px) {
     width: 476px;
     position: relative;
-    top: 350px;
+    top: 300px;
   }
   @media (min-width: $desktop-width) {
     width: 600px;
     position: inherit;
     top: -40px;
-    margin-left: 100px;
-    margin-right: 0px;
   }
 }
 
@@ -735,9 +737,6 @@ button.swiper-pagination-bullet {
   @media (min-width: 767px) {
     height: 828px;
   }
-  // @media (min-width: $desktop-width) {
-  //   height: 714px;
-  // }
 }
 
 .swiper-slide-cream {

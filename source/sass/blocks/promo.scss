@@ -14,7 +14,6 @@
     height: 640px;
   }
   @media (min-width: $desktop-width) {
-    //justify-content: center;
     height: 714px;
   }
 }
@@ -91,7 +90,8 @@
 }
 
 .promo__item {
-  margin: 20px;
+  margin: 20px 40px 20px 40px;
+
   @media (min-width: 767px) {
     display: flex;
     width: 608px;
@@ -101,7 +101,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    bottom: 400px;
+    bottom: 500px;
   }
   @media (min-width: $desktop-width) {
     position: inherit;
